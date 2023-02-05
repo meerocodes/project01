@@ -12,7 +12,7 @@
         display: flex;
         justify-content: space-around;
         color: $navFontColor;
-        
+         
     }
     li {
         font-family: $baseFont;
@@ -47,4 +47,13 @@
 
     
     }
+ 
 }
+
+footer {
+    background:red;
+}
+
+
+
+
