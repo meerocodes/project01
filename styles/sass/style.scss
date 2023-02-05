@@ -5,17 +5,19 @@
 
 
 .headerHome {
-    background-image: url(/planted-final-assets/banner-image.jpg);
+    background-image: url(/planted-final-assets/home-image-1.jpg);
     height: 100vh;
 
     nav {
         display: flex;
         justify-content: space-around;
+        color: white;
     }
 
     ul{
         display: flex;
         list-style: none;
+        text-decoration: none;
         gap: 15px;
     }
 

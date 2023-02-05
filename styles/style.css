@@ -247,7 +247,7 @@ h1, h2, h3, h4, p, a {
 }
 
 .headerHome {
-  background-image: url(/planted-final-assets/banner-image.jpg);
+  background-image: url(/planted-final-assets/home-image-1.jpg);
   height: 100vh;
 }
 .headerHome nav {
@@ -256,11 +256,13 @@ h1, h2, h3, h4, p, a {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  color: white;
 }
 .headerHome ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style: none;
+  text-decoration: none;
   gap: 15px;
 }
