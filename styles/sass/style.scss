@@ -1,0 +1,22 @@
+@use "partials/variables";
+@use "partials/setup";
+@use "partials/global";
+@use "partials/typography";
+
+
+.headerHome {
+    background-image: url(/planted-final-assets/banner-image.jpg);
+    height: 100vh;
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    ul{
+        display: flex;
+        list-style: none;
+        gap: 15px;
+    }
+
+}
