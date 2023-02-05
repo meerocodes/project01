@@ -12,16 +12,19 @@
         display: flex;
         justify-content: space-around;
         color: $navFontColor;
+        
     }
     
     h1 {
         color: white;
+        font-family: $baseFont;
     }
     
     a  {
         color: $navFontColor;
         text-decoration: none;
-         }
+        font-family: $baseFont;
+    }
 
     ul{
         display: flex;
