@@ -11,14 +11,24 @@
     nav {
         display: flex;
         justify-content: space-around;
+        color: $navFontColor;
+    }
+    
+    h1 {
         color: white;
     }
+    
+    a  {
+        color: $navFontColor;
+        text-decoration: none;
+         }
 
     ul{
         display: flex;
         list-style: none;
-        text-decoration: none;
         gap: 15px;
     }
-
+    .headerTextYellow {
+        color: $hoverFontColor;
+    }
 }
