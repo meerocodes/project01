@@ -1,0 +1,171 @@
+@use "./variables" as *;
+@use "./setup";
+@use "./global";
+@use "./typography";
+@use "./mixins" as *;
+@use "./nav" as *;
+
+.contact  {
+    background-image: url(../planted-final-assets/contact-header-1.jpg);
+    background-size: cover;
+    position: relative;
+    height: 50vh;
+    min-height: 500px;
+    display: flex;
+
+    .wrapper {
+        margin: auto;
+        width: 100%;
+        height: 100%;
+        
+    }
+    nav {
+        display: flex;
+        justify-content: flex-start;
+        color: $navFontColor;
+         
+    }
+    li {
+        font-family: $baseFont;
+
+    }
+    h1 {
+        padding-top: 10px;
+        color: white;
+        font-family: $baseFont;
+       
+
+
+    }
+
+    // contact form section
+    .getInTouch {
+        color: $hoverFontColor;
+        font-size: 3rem;
+        margin-top: 250px;
+
+    }
+    
+    a  {
+        color: $navFontColor;
+        text-decoration: none;
+        &:hover {
+            color:$hoverFontColor;
+        }
+        
+    }
+
+    ul{
+        display: flex;
+        list-style: none;
+        gap: 20px;
+    }
+    span {
+        display: block;
+    }
+
+}
+
+// info section with form
+.contactPage {
+    background-color: $primaryBG;
+    height: 50vh;
+    display: flex;
+
+
+.wrapper {
+    display: flex;
+    display: relative;
+    
+    form {
+        box-sizing: border-box;
+        display: block;
+        background-color: white;
+        box-shadow: -20px 30px $hoverFontColor;
+        height: 48%;
+        width: 58%;
+        border: none;
+        text-align: center;
+        position: absolute;
+        right:0;
+        top:0;
+        margin-top:250px;
+        margin-right:80px;
+    }
+        
+       
+    fieldset {
+        border: none;
+
+        text{
+
+        }
+
+        input {
+            margin-top: 40px;
+            width: 48%;
+            padding-bottom: 15px;
+            border-top-color: transparent;
+            border-left-color:transparent;
+            border-right-color:transparent;
+            border-bottom-color:$accent;
+            border-style: solid;
+            }   
+
+        button{
+            display: block;
+            font-family: $baseFont;
+            background-color: $accent;
+            border: none;
+            width: 100%;
+            padding:10px 0;
+            margin-top: 40px;
+            color: $navFontColor;
+            text-decoration: none;
+            &:hover {
+                color:$hoverFontColor;
+
+                }
+             }
+        textarea {
+            border-color:$accent;
+            display: block;
+            margin-top: 40px;
+            padding-top: 20px;
+            padding-left: 15px;
+            width: 100%;
+            height: 200px;
+            resize: none;            
+            }
+
+        }
+            
+    }
+}
+
+.contactInfo {
+    margin-top: 150px;
+    margin-left: 75px;
+
+    ul {
+        padding: 0 0;
+        line-height: 1.5rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: $footerColor;
+    color:white;
+    text-align: center;
+    padding: 10px;
+
+}

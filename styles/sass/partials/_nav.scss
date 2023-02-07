@@ -1,0 +1,52 @@
+@use "./variables" as *;
+@use "./setup";
+@use "./global";
+@use "./typography";
+@use "./mixins" as *;
+
+.header {
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+
+    .wrapper {
+        margin: auto;
+        width: 100%;
+        height: 100%;
+     
+    }
+    nav {
+        display: flex;
+        justify-content: flex-start;
+        color: $navFontColor;
+         
+    }
+    li {
+        font-family: $baseFont;
+
+    }
+    h1 {
+        padding-top: 10px;
+        color: white;
+        font-family: $baseFont;
+        z-index: 20;
+
+
+    }
+    
+    a  {
+        color: $navFontColor;
+        text-decoration: none;
+        &:hover {
+            color:$hoverFontColor;
+        }
+        
+    }
+
+    ul{
+        display: flex;
+        list-style: none;
+        gap: 20px;
+    }
+
+}

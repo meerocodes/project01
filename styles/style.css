@@ -243,9 +243,253 @@ img {
   display: block;
 }
 
+li {
+  list-style: none;
+}
+
 h1, h2, h3, h4, p, a {
   margin: 0;
   font-family: "Josefin Sans", sans-serif;
+  text-decoration: none;
+}
+
+.header {
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+}
+.header .wrapper {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+.header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  color: white;
+}
+.header li {
+  font-family: "Josefin Sans", sans-serif;
+}
+.header h1 {
+  padding-top: 10px;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  z-index: 20;
+}
+.header a {
+  color: white;
+  text-decoration: none;
+}
+.header a:hover {
+  color: #F8E71C;
+}
+.header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.contact {
+  background-image: url(../planted-final-assets/contact-header-1.jpg);
+  background-size: cover;
+  position: relative;
+  height: 50vh;
+  min-height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contact .wrapper {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+.contact nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  color: white;
+}
+.contact li {
+  font-family: "Josefin Sans", sans-serif;
+}
+.contact h1 {
+  padding-top: 10px;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+}
+.contact .getInTouch {
+  color: #F8E71C;
+  font-size: 3rem;
+  margin-top: 250px;
+}
+.contact a {
+  color: white;
+  text-decoration: none;
+}
+.contact a:hover {
+  color: #F8E71C;
+}
+.contact ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+.contact span {
+  display: block;
+}
+
+.contactPage {
+  background-color: #F0EFED;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contactPage .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: relative;
+}
+.contactPage .wrapper form {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  background-color: white;
+  -webkit-box-shadow: -20px 30px #F8E71C;
+          box-shadow: -20px 30px #F8E71C;
+  height: 48%;
+  width: 58%;
+  border: none;
+  text-align: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 250px;
+  margin-right: 80px;
+}
+.contactPage .wrapper fieldset {
+  border: none;
+}
+.contactPage .wrapper fieldset input {
+  margin-top: 40px;
+  width: 48%;
+  padding-bottom: 15px;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: #0E902D;
+  border-style: solid;
+}
+.contactPage .wrapper fieldset button {
+  display: block;
+  font-family: "Josefin Sans", sans-serif;
+  background-color: #0E902D;
+  border: none;
+  width: 100%;
+  padding: 10px 0;
+  margin-top: 40px;
+  color: white;
+  text-decoration: none;
+}
+.contactPage .wrapper fieldset button:hover {
+  color: #F8E71C;
+}
+.contactPage .wrapper fieldset textarea {
+  border-color: #0E902D;
+  display: block;
+  margin-top: 40px;
+  padding-top: 20px;
+  padding-left: 15px;
+  width: 100%;
+  height: 200px;
+  resize: none;
+}
+
+.contactInfo {
+  margin-top: 150px;
+  margin-left: 75px;
+}
+.contactInfo ul {
+  padding: 0 0;
+  line-height: 1.5rem;
+}
+
+footer {
+  background-color: #2C2C2C;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  color: white;
+  background-color: black;
+}
+nav .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+nav h1 {
+  padding-top: 10px;
+}
+
+li {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+header {
+  background-image: url(../planted-final-assets/blog-header-1.jpg);
+  height: 50vh;
+  min-height: 300px;
+}
+header .wrapper {
+  height: 100%;
+}
+header img {
+  position: absolute;
+  right: 0px;
+  top: 300px;
+  width: 50%;
+  -webkit-box-shadow: -20px 20px 0px #F8E71C;
+          box-shadow: -20px 20px 0px #F8E71C;
+}
+
+main {
+  height: 200vh;
+}
+
+footer {
+  background-color: #2C2C2C;
+  color: white;
+  text-align: center;
+  padding: 10px;
 }
 
 .headerHome {
@@ -253,6 +497,7 @@ h1, h2, h3, h4, p, a {
   background-size: cover;
   position: relative;
   height: 100vh;
+  min-height: 900px;
 }
 .headerHome .wrapper {
   margin: auto;
@@ -271,7 +516,7 @@ h1, h2, h3, h4, p, a {
 .headerHome li {
   font-family: "Josefin Sans", sans-serif;
 }
-.headerHome h1 {
+.headerHome .logo {
   padding-top: 10px;
   color: white;
   font-family: "Josefin Sans", sans-serif;
@@ -292,6 +537,7 @@ h1, h2, h3, h4, p, a {
   gap: 20px;
 }
 .headerHome .headerText {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -306,8 +552,14 @@ h1, h2, h3, h4, p, a {
   margin-top: 300px;
   font-size: 3.5rem;
 }
+.headerHome h1 {
+  z-index: 20;
+  color: white;
+}
 .headerHome .headerTextYellow {
   color: #F8E71C;
+  margin-left: 130px;
+  z-index: 20;
 }
 .headerHome img {
   width: 700px;
@@ -359,7 +611,7 @@ h1, h2, h3, h4, p, a {
 }
 .whatIsPlanted button {
   border: none;
-  padding: 8px 15px;
+  padding: 8px 20px;
   color: white;
   background-color: #0E902D;
   font-family: "Josefin Sans", sans-serif;
@@ -378,11 +630,10 @@ h1, h2, h3, h4, p, a {
 }
 .homeBlog button {
   border: none;
-  padding: 8px 15px;
+  padding: 8px 20px;
   color: white;
   background-color: #0E902D;
   font-family: "Josefin Sans", sans-serif;
-  width: 180px;
 }
 .homeBlog button:hover {
   color: #F8E71C;
@@ -423,7 +674,6 @@ h1, h2, h3, h4, p, a {
   line-height: 1.5rem;
 }
 .homeBlog .leftSide a {
-  width: 180px;
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
@@ -512,11 +762,10 @@ h1, h2, h3, h4, p, a {
 }
 .plantedFounder button {
   border: none;
-  padding: 8px 15px;
+  padding: 8px 20px;
   color: white;
   background-color: #0E902D;
   font-family: "Josefin Sans", sans-serif;
-  width: 180px;
 }
 .plantedFounder button:hover {
   color: #F8E71C;

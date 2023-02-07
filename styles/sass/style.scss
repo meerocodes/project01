@@ -1,8 +1,11 @@
-@use "partials/variables" as *;
-@use "partials/setup";
-@use "partials/global";
-@use "partials/typography";
-@use "partials/mixins" as *;
+@use "./partials/variables" as *;
+@use "./partials/setup";
+@use "./partials/global";
+@use "./partials/typography";
+@use "./partials/mixins" as *;
+@use "./partials/contact" as *;
+@use "./partials/nav" as *;
+@use "./partials/blog" as *;
 
 
 .headerHome {
@@ -10,6 +13,7 @@
     background-size: cover;
     position: relative;
     height: 100vh;
+    min-height: 900px;
 
     .wrapper {
         margin: auto;
@@ -27,7 +31,7 @@
         font-family: $baseFont;
 
     }
-    h1 {
+    .logo {
         padding-top: 10px;
         color: white;
         font-family: $baseFont;
@@ -51,6 +55,7 @@
         gap: 20px;
     }
     .headerText {
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -59,9 +64,14 @@
         font-size: 3.5rem;
        
       }
-    
+    h1 {
+        z-index: 20;
+        color: white;
+    }
     .headerTextYellow {
         color: $hoverFontColor;
+        margin-left: 130px;
+        z-index: 20;
       
 
     }
@@ -109,7 +119,7 @@
     }
     button {
         border: none;
-        padding: 8px 15px;
+        padding: 8px 20px;
         color: $navFontColor;
         background-color: $accent ;
         font-family: $baseFont;
@@ -131,11 +141,10 @@
     button {
            
         border: none;
-        padding: 8px 15px;
+        padding: 8px 20px;
         color: $navFontColor;
         background-color: $accent ;
         font-family: $baseFont;
-        width: 180px;
 
         &:hover {
             color:$hoverFontColor;
@@ -162,6 +171,7 @@
             margin-top: 50px;
 
         }
+      
     }
     .leftSide {
         justify-content: flex-start;
@@ -178,7 +188,6 @@
         }
 
         a {
-            width: 180px;
             align-self: flex-end;
             
         }    
@@ -264,11 +273,10 @@
     }
     button { 
     border: none;
-    padding: 8px 15px;
+    padding: 8px 20px;
     color: $navFontColor;
     background-color: $accent ;
     font-family: $baseFont;
-    width: 180px;
     
         &:hover {
             color:$hoverFontColor;
@@ -299,11 +307,10 @@
 // Footer
 
 footer {
-    background-color: $navColor;
+    background-color: $footerColor;
     color:white;
     text-align: center;
     padding: 10px;
-
 
 }
 

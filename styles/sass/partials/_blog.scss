@@ -1,0 +1,63 @@
+@use "./variables" as *;
+@use "./setup";
+@use "./global";
+@use "./typography";
+@use "./mixins" as *;
+@use "./nav" as *;
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    color: $navFontColor;
+    background-color: black;
+    .wrapper {
+        display: flex;
+    }
+
+    ul {
+        display: flex;
+        gap: 20px;
+    }
+    h1 {
+        padding-top: 10px;
+    }
+     
+}
+
+li {
+    font-family: $baseFont;
+}
+
+header {
+    background-image: url(../planted-final-assets/blog-header-1.jpg);
+    height: 50vh;
+    min-height: 300px;
+    .wrapper {
+        height: 100%;
+    }
+
+    img {
+        position: absolute;
+        right:0px;
+        top:300px;
+        width: 50%;
+        box-shadow: -20px 20px 0px $hoverFontColor;
+    }
+}
+
+
+
+
+main {
+    height: 200vh;
+}
+
+
+// Footer styles
+footer {
+    background-color: $footerColor;
+    color:white;
+    text-align: center;
+    padding: 10px;
+
+}

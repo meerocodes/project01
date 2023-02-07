@@ -8,15 +8,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
     <!-- Header section  -->
-    <header id="contact">
+    <header class="contact" id="contact">
         <div class="wrapper">
-            <h1 class="logo">Planted</h1>
             <nav>
+                <h1 class="logo">Planted</h1>
+
                 <ul>
                     <li><a href="./index.html">HOME</a></li>
                     <li><a href="#about">ABOUT</a></li>
@@ -24,7 +25,7 @@
                     <li><a href="./contact.html">CONTACT</a></li>
                 </ul>
             </nav>
-            <h1>Get in Touch</h1>
+            <h1 class="getInTouch">Get in <span>Touch</span></h1>
     
         </div>
     </header>
@@ -40,21 +41,25 @@
                     <li>MSVD40</li>
                 </ul>
             </div>
+            
+        
             <form action="#" method="POST" name="contactForm">
-
    
                 <fieldset>
                     <label for="name" class="sr-only">Name:</label>
                     <input type="text" placeholder="Name" id="name" required>
-
+    
                     <label for="name" class="sr-only">Email:</label>
                     <input type="email" placeholder="Email address" id="email" required>
-
+    
                     <label for="message" class="sr-only">Message:</label>
                     <textarea name ="message" placeholder="Message" id="comments cols=100 rows=40" minlength="5" maxlength="100"></textarea>
+                    <button type="submit">Submit</button>
                 </fieldset>
+            </form>
+        </div>   
+        
 
-        </div>
     </section>
 </body>
 
