@@ -35,9 +35,8 @@
         <div class="wrapper">
 
             <h1 class="blogTitle">Blog</h1>
-
-            <img src="./planted-final-assets/post-image.jpg" alt="many green leaves">
         </div>
+        <img src="./planted-final-assets/post-image.jpg" alt="many green leaves">
      
     </header>
 
@@ -58,7 +57,7 @@
  
 
 
-            <article>
+            <article class="articleBlog">
                 <h2>Our mission at Planted</h2>
                 <p class="date"> Monday January 21st, 2019 by Yousra</p>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam sint, fugiat illum quasi magnam animi, dolor inventore sequi laudantium, facilis vel beatae? Suscipit esse, repellendus dolorum ut excepturi quis cupiditate. <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, optio dolorum id porro animi quasi facilis officiis a nulla ipsam debitis vero nobis hic perferendis. Optio praesentium cumque sint illo in, tempore beatae exercitationem amet dolore, expedita animi maiores cum.<br> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, atque debitis vel iusto totam, itaque iste sunt quam nisi deserunt nihil, nemo ab consequatur neque ipsum nostrum provident placeat. Aut quos perspiciatis pariatur similique doloremque accusantium provident sunt tempore blanditiis, cumque expedita in sed velit totam nemo quod odit dicta, optio modi iusto enim officiis adipisci? Aperiam temporibus error aut molestiae, sed sequi tenetur obcaecati eos vero, cupiditate ullam necessitatibus distinctio fugit ab earum fugiat eveniet non ex quas? Aliquam!<br>
@@ -66,7 +65,7 @@
             </article>
 
             <div class="comments">
-                <h2>Comments</h2>
+                <h2>Comments:</h2>
                     <div class="firstComment">
                         <img src="./planted-final-assets/profile-image.jpg">
                         <h3>Tuesday October 9th, 2018 by Jeremy</h3>
@@ -80,6 +79,22 @@
 
                 </div>
             </div>
+
+            <form action="#" method="POST" name="contactForm">
+   
+                <fieldset>
+                    <label for="name" class="sr-only">Name:</label>
+                    <input type="text" placeholder="Name" id="name" required>
+    
+                    <label for="name" class="sr-only">Email:</label>
+                    <input type="email" placeholder="Email address" id="email" required>
+    
+                    <label for="message" class="sr-only">Message:</label>
+                    <textarea name ="message" placeholder="Message" id="comments cols=100 rows=40" minlength="5" maxlength="100"></textarea>
+                    <button type="submit">Post Comment</button>
+                </fieldset>
+            </form>
+
         </div>
     </main>
 
