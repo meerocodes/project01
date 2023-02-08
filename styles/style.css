@@ -239,6 +239,7 @@ html {
 }
 
 img {
+  width: 100%;
   height: auto;
   display: block;
 }
@@ -421,7 +422,6 @@ h1, h2, h3, h4, p, a {
 
 .contactInfo {
   margin-top: 150px;
-  margin-left: 75px;
 }
 .contactInfo ul {
   padding: 0 0;
@@ -464,25 +464,96 @@ li {
   font-family: "Josefin Sans", sans-serif;
 }
 
-header {
+.blogHeader {
   background-image: url(../planted-final-assets/blog-header-1.jpg);
   height: 50vh;
   min-height: 300px;
 }
-header .wrapper {
+.blogHeader .wrapper {
   height: 100%;
 }
-header img {
+.blogHeader img {
   position: absolute;
   right: 0px;
   top: 300px;
-  width: 50%;
+  width: 60%;
   -webkit-box-shadow: -20px 20px 0px #F8E71C;
           box-shadow: -20px 20px 0px #F8E71C;
 }
 
-main {
-  height: 200vh;
+.asideImg {
+  width: 400px;
+  position: relative;
+  left: 0;
+  top: 100px;
+}
+
+.blogMain {
+  background-color: #F0EFED;
+}
+.blogMain .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+aside {
+  background-color: white;
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 20%;
+  margin-left: 125px;
+  margin-top: -220px;
+  padding: 10px 10px;
+}
+aside a {
+  color: #074115;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+}
+aside a:hover {
+  color: #0E902D;
+}
+aside a:focus {
+  background-color: lightblue;
+}
+aside p {
+  margin-top: 10px;
+}
+aside li {
+  list-style-type: "- ";
+}
+
+article {
+  padding-left: 20px;
+  padding-top: 150px;
+  margin-top: -450px;
+  width: 64%;
+  border-left: 5px solid #F8E71C;
+  border-bottom: 5px solid #F8E71C;
+}
+article p.date {
+  margin-top: 0;
+}
+article p {
+  margin-top: 20px;
+  line-height: 1.5rem;
 }
 
 footer {
@@ -503,6 +574,13 @@ footer {
   margin: auto;
   width: 100%;
   height: 100%;
+}
+.headerHome img {
+  width: 700px;
+  position: absolute;
+  right: 0;
+  top: 350px;
+  z-index: 10;
 }
 .headerHome nav {
   display: -webkit-box;
@@ -528,6 +606,9 @@ footer {
 }
 .headerHome a:hover {
   color: #F8E71C;
+}
+.headerHome a:focus {
+  background-color: lightblue;
 }
 .headerHome ul {
   display: -webkit-box;
@@ -560,13 +641,6 @@ footer {
   color: #F8E71C;
   margin-left: 130px;
   z-index: 20;
-}
-.headerHome img {
-  width: 700px;
-  position: absolute;
-  right: 0;
-  margin-top: -350px;
-  z-index: 10;
 }
 
 .whatIsPlanted {
@@ -609,15 +683,18 @@ footer {
   font-family: "Roboto", sans-serif;
   line-height: 1.5rem;
 }
-.whatIsPlanted button {
+.whatIsPlanted a {
   border: none;
   padding: 8px 20px;
   color: white;
   background-color: #0E902D;
   font-family: "Josefin Sans", sans-serif;
 }
-.whatIsPlanted button:hover {
+.whatIsPlanted a:hover {
   color: #F8E71C;
+}
+.whatIsPlanted a:focus {
+  background-color: lightblue;
 }
 
 .homeBlog {
@@ -628,15 +705,22 @@ footer {
   gap: 200px;
   height: 900px;
 }
-.homeBlog button {
+.homeBlog .wrapper {
+  width: 100%;
+}
+.homeBlog a {
   border: none;
   padding: 8px 20px;
   color: white;
   background-color: #0E902D;
   font-family: "Josefin Sans", sans-serif;
+  width: 150px;
 }
-.homeBlog button:hover {
+.homeBlog a:hover {
   color: #F8E71C;
+}
+.homeBlog a:focus {
+  background-color: lightblue;
 }
 .homeBlog .leftSide, .homeBlog .rightSide {
   display: -webkit-box;
@@ -718,11 +802,11 @@ footer {
 }
 
 .imgbreak {
-  width: 1200px;
+  width: 100px;
   height: auto;
 }
 .imgbreak img {
-  width: 100%;
+  width: 100px;
 }
 
 .plantedFounder {
@@ -760,15 +844,19 @@ footer {
   -webkit-box-shadow: 20px 20px 0px #F8E71C;
           box-shadow: 20px 20px 0px #F8E71C;
 }
-.plantedFounder button {
+.plantedFounder a {
   border: none;
+  width: 180px;
   padding: 8px 20px;
   color: white;
   background-color: #0E902D;
   font-family: "Josefin Sans", sans-serif;
 }
-.plantedFounder button:hover {
+.plantedFounder a:hover {
   color: #F8E71C;
+}
+.plantedFounder a:focus {
+  background-color: lightblue;
 }
 
 .gallery {
@@ -791,7 +879,7 @@ footer {
   list-style: none;
 }
 
-footer {
+.homeFooter {
   background-color: #2C2C2C;
   color: white;
   text-align: center;

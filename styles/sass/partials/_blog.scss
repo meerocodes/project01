@@ -28,7 +28,7 @@ li {
     font-family: $baseFont;
 }
 
-header {
+.blogHeader {
     background-image: url(../planted-final-assets/blog-header-1.jpg);
     height: 50vh;
     min-height: 300px;
@@ -40,16 +40,73 @@ header {
         position: absolute;
         right:0px;
         top:300px;
-        width: 50%;
+        width: 60%;
         box-shadow: -20px 20px 0px $hoverFontColor;
     }
 }
 
 
+.asideImg {
+    width: 400px;
+    position: relative;
+    left: 0;
+    top: 100px;
+}
 
+.blogMain {
+    background-color: $primaryBG;
+    .wrapper {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    }
+    
+}
+aside {
+    a {
+        color: $blogComments;
+        font-weight: 700;
+        font-family: $secondaryFont;
+        &:hover {
+            color: $accent;
+        }
+        &:focus {
+            background-color: lightblue;
+        }
+    }
+    p {
+        margin-top: 10px;
+    }
+    background-color: white;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width:20% ;
+    margin-left: 125px;
+    margin-top: -220px;
+    padding: 10px 10px;
+    li{
+        list-style-type:"- ";
+    }
+}
 
-main {
-    height: 200vh;
+article {
+    padding-left: 20px;
+    padding-top: 150px;
+    margin-top: -450px;
+    width: 64%;
+    border-left:5px solid $hoverFontColor;
+    border-bottom: 5px solid $hoverFontColor;
+
+    p.date {
+        margin-top: 0;
+    }
+    p {
+        margin-top: 20px;
+        line-height: 1.5rem;
+    }
 }
 
 

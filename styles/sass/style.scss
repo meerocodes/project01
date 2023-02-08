@@ -21,6 +21,15 @@
         height: 100%;
      
     }
+      
+    img {
+        width: 700px;
+        position: absolute;
+        right: 0;
+        top: 350px;
+        z-index: 10;
+     
+    }
     nav {
         display: flex;
         justify-content: flex-start;
@@ -45,6 +54,9 @@
         text-decoration: none;
         &:hover {
             color:$hoverFontColor;
+        }
+        &:focus {
+            background-color:$focus ;
         }
         
     }
@@ -73,17 +85,6 @@
         margin-left: 130px;
         z-index: 20;
       
-
-    }
-
-  
-    img {
-            width: 700px;
-            position: absolute;
-            right: 0;
-            margin-top: -350px;
-            z-index: 10;
-         
         }
 
     
@@ -117,7 +118,7 @@
         font-family: $secondaryFont;
         line-height: 1.5rem;
     }
-    button {
+    a {
         border: none;
         padding: 8px 20px;
         color: $navFontColor;
@@ -126,6 +127,9 @@
 
         &:hover {
             color:$hoverFontColor;
+        }
+        &:focus {
+            background-color:$focus ;
         }
     }
 }
@@ -138,18 +142,25 @@
     gap: 200px;
     height: 900px;
 
-    button {
+    .wrapper {
+        width: 100%;
+    }
+    a {
            
         border: none;
         padding: 8px 20px;
         color: $navFontColor;
         background-color: $accent ;
         font-family: $baseFont;
+        width: 150px;
 
         &:hover {
             color:$hoverFontColor;
-            }
         }
+        &:focus {
+            background-color:$focus ;
+        }
+    }
         
           
     .leftSide, .rightSide{
@@ -233,12 +244,13 @@
     // image break
 
 .imgbreak {
-        width: 1200px;
+
+        width: 100px;
         height: auto;
 
 
     img {
-        width: 100%;
+        width: 100px;
 
     }
 }
@@ -271,8 +283,9 @@
         box-shadow: 20px 20px 0px $hoverFontColor;
 
     }
-    button { 
+    a { 
     border: none;
+    width: 180px;
     padding: 8px 20px;
     color: $navFontColor;
     background-color: $accent ;
@@ -281,6 +294,10 @@
         &:hover {
             color:$hoverFontColor;
         }
+        &:focus {
+            background-color:$focus ;
+        }
+        
     }
 }  
 
@@ -306,7 +323,7 @@
 
 // Footer
 
-footer {
+.homeFooter {
     background-color: $footerColor;
     color:white;
     text-align: center;
