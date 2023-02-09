@@ -443,7 +443,7 @@ footer {
   padding: 10px;
 }
 
-nav {
+.navBlog {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -453,18 +453,18 @@ nav {
   color: white;
   background-color: black;
 }
-nav .wrapper {
+.navBlog .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-nav ul {
+.navBlog ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 20px;
 }
-nav h1 {
+.navBlog h1 {
   padding-top: 10px;
 }
 
@@ -700,6 +700,218 @@ footer {
   padding: 10px;
 }
 
+@media (max-width: 500px) {
+  .wrapper {
+    width: 98%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .headerHome img {
+    visibility: hidden;
+  }
+  .headerHome ul {
+    visibility: hidden;
+  }
+  .headerHome .logo {
+    -ms-flex-item-align: center;
+        align-self: center;
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
+    margin-left: 20px;
+  }
+  .headerHome .headerText h1 {
+    font-size: 3.5rem;
+  }
+  .headerHome .wrapper .headerTextYellow {
+    margin-left: 53px;
+  }
+  main .whatIsPlanted {
+    height: 75vh;
+    padding: 25px 25px;
+  }
+  main .whatIsPlanted .wrapper {
+    width: 98%;
+  }
+  main .whatIsPlanted .wrapper h2 {
+    font-size: 2rem;
+  }
+  main .homeBlog {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0px;
+    height: 120vh;
+  }
+  main .homeBlog img {
+    width: 300px;
+  }
+  main .homeBlog .leftSide {
+    width: 98%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 2rem;
+  }
+  main .homeBlog .leftSide h2 {
+    padding: 0;
+    margin-top: 20px;
+    text-align: center;
+  }
+  main .homeBlog .leftSide p {
+    font-size: 1rem;
+    padding: 0;
+    text-align: center;
+  }
+  main .homeBlog .leftSide a {
+    -ms-flex-item-align: center;
+        align-self: center;
+    font-size: 1rem;
+  }
+  main .homeBlog .rightSide {
+    width: 98%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 20px;
+    font-size: 2rem;
+  }
+  main .homeBlog .rightSide img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  main .homeBlog .rightSide h2 {
+    padding: 0;
+    text-align: center;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  main .homeBlog .rightSide p {
+    font-size: 1rem;
+    padding: 0;
+    text-align: center;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  main .homeBlog .rightSide a {
+    -ms-flex-item-align: center;
+        align-self: center;
+    font-size: 1rem;
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  main .about {
+    height: 110vh;
+    padding: 50px 10px;
+  }
+  main .about .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main .about .wrapper .greenHousesBox, main .about .wrapper .communityBox, main .about .wrapper .blogBox, main .about .wrapper .getInTouchBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+  }
+  main .about .wrapper .greenHousesBox img, main .about .wrapper .communityBox img, main .about .wrapper .blogBox img, main .about .wrapper .getInTouchBox img {
+    position: absolute;
+    left: 130px;
+    right: 0;
+  }
+  main .about .wrapper .greenHousesBox .blogIcon, main .about .wrapper .communityBox .blogIcon, main .about .wrapper .blogBox .blogIcon, main .about .wrapper .getInTouchBox .blogIcon {
+    position: absolute;
+    left: 170px;
+  }
+  main .imgBreak {
+    height: 100%;
+  }
+  main .plantedFounder {
+    height: 75vh;
+  }
+  main .plantedFounder .wrapper {
+    gap: 0px;
+    margin-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .plantedFounder .wrapper article {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .plantedFounder img {
+    width: 200px;
+  }
+  main .gallery {
+    padding: 0px;
+  }
+  main .gallery ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0px;
+  }
+  main .gallery img {
+    width: 100px;
+  }
+}
 .headerHome {
   background-image: url(../planted-final-assets/home-image-1.jpg);
   background-size: cover;
@@ -920,7 +1132,6 @@ footer {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: px;
 }
 .about .wrapper .greenHousesBox, .about .wrapper .communityBox, .about .wrapper .blogBox, .about .wrapper .getInTouchBox {
   display: -webkit-box;
@@ -930,12 +1141,22 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 50%;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
   line-height: 1.5rem;
   gap: 20px;
+  position: relative;
 }
 .about .wrapper .greenHousesBox h3, .about .wrapper .communityBox h3, .about .wrapper .blogBox h3, .about .wrapper .getInTouchBox h3 {
   margin-top: 25px;
+}
+.about .wrapper .greenHousesBox img, .about .wrapper .communityBox img, .about .wrapper .blogBox img, .about .wrapper .getInTouchBox img {
+  width: 25px;
+  position: absolute;
+  left: -35px;
+  top: 25px;
+  background-color: #F8E71C;
+  border-radius: 50%;
 }
 
 .imgbreak {

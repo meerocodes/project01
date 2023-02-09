@@ -6,7 +6,7 @@
 @use "./nav" as *;
 @use "./contact" as *;
 
-nav {
+.navBlog {
     display: flex;
     justify-content: flex-start;
     color: $navFontColor;
