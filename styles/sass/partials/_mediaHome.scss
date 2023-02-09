@@ -54,6 +54,7 @@
 main {
     .whatIsPlanted{
         height: 75vh;
+        min-height: 800px;
         padding: 25px 25px;
         .wrapper {
             width: 98%;
@@ -74,6 +75,7 @@ main {
         flex-direction: column;
         gap: 0px;
         height: 120vh;
+        min-height: 1000px;
 
         img {
             width: 300px;
@@ -139,6 +141,7 @@ main {
 }
 .about {
     height: 110vh;
+    min-height: 1000px;
     padding: 50px 10px;
 
     .wrapper {
@@ -170,6 +173,7 @@ main {
 }
 .plantedFounder {
     height: 75vh;
+    min-height: 900px;
 
     .wrapper {
         gap: 0px;

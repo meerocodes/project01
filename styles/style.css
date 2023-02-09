@@ -734,6 +734,7 @@ footer {
   }
   main .whatIsPlanted {
     height: 75vh;
+    min-height: 800px;
     padding: 25px 25px;
   }
   main .whatIsPlanted .wrapper {
@@ -752,6 +753,7 @@ footer {
             flex-direction: column;
     gap: 0px;
     height: 120vh;
+    min-height: 1000px;
   }
   main .homeBlog img {
     width: 300px;
@@ -836,6 +838,7 @@ footer {
   }
   main .about {
     height: 110vh;
+    min-height: 1000px;
     padding: 50px 10px;
   }
   main .about .wrapper {
@@ -875,6 +878,7 @@ footer {
   }
   main .plantedFounder {
     height: 75vh;
+    min-height: 900px;
   }
   main .plantedFounder .wrapper {
     gap: 0px;
