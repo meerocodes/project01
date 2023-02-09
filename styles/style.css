@@ -711,13 +711,19 @@ footer {
   }
   .headerHome ul {
     visibility: hidden;
+    width: 0;
+  }
+  .headerHome li {
+    visibility: hidden;
+    width: 0;
+  }
+  .headerHome a {
+    visibility: hidden;
+    width: 0px;
   }
   .headerHome .logo {
     -ms-flex-item-align: center;
         align-self: center;
-    -webkit-box-flex: 2;
-        -ms-flex-positive: 2;
-            flex-grow: 2;
     margin-left: 20px;
   }
   .headerHome .headerText h1 {
@@ -892,24 +898,51 @@ footer {
   main .plantedFounder img {
     width: 200px;
   }
-  main .gallery {
-    padding: 0px;
+}
+@media (max-width: 390px) {
+  .headerHome .wrapper .headerTextYellow {
+    margin-left: 3px;
   }
-  main .gallery ul {
+  main .homeBlog {
+    height: 135vh;
+  }
+  main .about {
+    height: 125vh;
+  }
+  main .about .wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    padding: 0px;
   }
-  main .gallery img {
-    width: 100px;
+  main .about .wrapper .greenHousesBox, main .about .wrapper .communityBox, main .about .wrapper .blogBox, main .about .wrapper .getInTouchBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+  }
+  main .about .wrapper .greenHousesBox img, main .about .wrapper .communityBox img, main .about .wrapper .blogBox img, main .about .wrapper .getInTouchBox img {
+    position: absolute;
+    left: 80px;
+    right: 0;
+  }
+  main .about .wrapper .greenHousesBox .blogIcon, main .about .wrapper .communityBox .blogIcon, main .about .wrapper .blogBox .blogIcon, main .about .wrapper .getInTouchBox .blogIcon {
+    position: absolute;
+    left: 120px;
+  }
+  main .plantedFounder {
+    height: 100vh;
   }
 }
 .headerHome {

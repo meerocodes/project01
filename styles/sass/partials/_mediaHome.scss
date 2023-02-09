@@ -25,10 +25,18 @@
         
         ul {
             visibility: hidden;
+            width: 0;
+        }
+        li {
+            visibility: hidden;
+            width: 0;
+        }
+        a{
+            visibility: hidden;
+            width: 0px;
         }
         .logo{
             align-self: center;
-            flex-grow: 2;
             margin-left: 20px;
         }
         .headerText {
@@ -179,21 +187,54 @@ main {
     }
 
 }
+}
+}
 
-.gallery {
-    padding: 0px;
-    ul{
-    display: flex;
-    margin:0;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding: 0px;
+@media (max-width:390px) {
+        .headerHome {
+        .wrapper{
+            .headerTextYellow {
+                margin-left: 3px;
+            }
+        }
     }
-    img {
-        width: 100px;
+
+    main {
+        .homeBlog {
+            height: 135vh;
+        }
+    
+        .about {
+        height:125vh;
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            
+                .greenHousesBox, .communityBox, .blogBox, .getInTouchBox {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+        
+                    img {
+                        position: absolute;
+                        left: 80px;
+                        right: 0;
+                    }
+                    .blogIcon {
+                        position:absolute;
+                        left: 120px;
+                    }
+                }
+        }
     }
+
+   .plantedFounder {
+    height: 100vh;
+   } 
+}
 }
 
 
-}
-}
