@@ -254,6 +254,360 @@ h1, h2, h3, h4, p, a {
   text-decoration: none;
 }
 
+.headerHome {
+  background-image: url(../planted-final-assets/home-image-1.jpg);
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+  min-height: 700px;
+}
+.headerHome .wrapper {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+.headerHome img {
+  width: 700px;
+  position: absolute;
+  right: 0;
+  top: 350px;
+  z-index: 10;
+}
+.headerHome nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  color: white;
+}
+.headerHome li {
+  font-family: "Josefin Sans", sans-serif;
+}
+.headerHome .logo {
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  z-index: 20;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+.headerHome a {
+  color: white;
+  text-decoration: none;
+}
+.headerHome a:hover {
+  color: #F8E71C;
+}
+.headerHome a:focus {
+  background-color: rgb(0, 174, 197);
+}
+.headerHome ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+.headerHome .headerText {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+  margin-top: 300px;
+  font-size: 3.5rem;
+}
+.headerHome h1 {
+  z-index: 20;
+  color: white;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+.headerHome span {
+  color: #F8E71C;
+  display: block;
+}
+.headerHome .headerTextYellow {
+  color: #F8E71C;
+  margin-left: 130px;
+  z-index: 20;
+}
+
+.whatIsPlanted {
+  background-color: #F0EFED;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 700px;
+  padding: 50px 50px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.whatIsPlanted .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+  width: 60%;
+}
+.whatIsPlanted h2 {
+  font-size: 4rem;
+}
+.whatIsPlanted p {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5rem;
+}
+.whatIsPlanted a {
+  border: none;
+  padding: 8px 20px;
+  color: white;
+  background-color: #0E902D;
+  font-family: "Josefin Sans", sans-serif;
+}
+.whatIsPlanted a:hover {
+  color: #F8E71C;
+}
+.whatIsPlanted a:focus {
+  background-color: rgb(0, 174, 197);
+}
+
+.homeBlog {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 200px;
+  min-height: 700px;
+}
+.homeBlog .wrapper {
+  width: 100%;
+}
+.homeBlog a {
+  border: none;
+  padding: 8px 20px;
+  color: white;
+  background-color: #0E902D;
+  font-family: "Josefin Sans", sans-serif;
+  width: 150px;
+}
+.homeBlog a:hover {
+  color: #F8E71C;
+}
+.homeBlog a:focus {
+  background-color: rgb(0, 174, 197);
+}
+.homeBlog .leftSide, .homeBlog .rightSide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+.homeBlog .leftSide h2, .homeBlog .rightSide h2 {
+  font-size: 2rem;
+}
+.homeBlog .rightSide {
+  margin-top: 200px;
+}
+.homeBlog .rightSide h2, .homeBlog .rightSide p {
+  padding-right: 200px;
+}
+.homeBlog .rightSide img {
+  -webkit-box-shadow: -20px 20px 0px #F8E71C;
+          box-shadow: -20px 20px 0px #F8E71C;
+  margin-top: 50px;
+}
+.homeBlog .leftSide {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.homeBlog .leftSide h2 {
+  margin-top: 100px;
+}
+.homeBlog .leftSide h2, .homeBlog .leftSide p {
+  padding-left: 200px;
+  text-align: right;
+  gap: 25px;
+  line-height: 1.5rem;
+}
+.homeBlog .leftSide a {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+.homeBlog .leftSide img {
+  margin-top: -50px;
+  -webkit-box-shadow: 20px 20px 0px #F8E71C;
+          box-shadow: 20px 20px 0px #F8E71C;
+}
+
+.about {
+  background-color: #F0EFED;
+  min-height: 600px;
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+.about .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.about .wrapper .greenHousesBox, .about .wrapper .communityBox, .about .wrapper .blogBox, .about .wrapper .getInTouchBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  line-height: 1.5rem;
+  gap: 20px;
+}
+.about .wrapper .greenHousesBox .title, .about .wrapper .communityBox .title, .about .wrapper .blogBox .title, .about .wrapper .getInTouchBox .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.about .wrapper .greenHousesBox .title h3, .about .wrapper .communityBox .title h3, .about .wrapper .blogBox .title h3, .about .wrapper .getInTouchBox .title h3 {
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+.about .wrapper .greenHousesBox .title img, .about .wrapper .communityBox .title img, .about .wrapper .blogBox .title img, .about .wrapper .getInTouchBox .title img {
+  width: 5%;
+  height: 30px;
+  -ms-flex-item-align: center;
+      align-self: center;
+  background-color: #F8E71C;
+  border-radius: 50%;
+}
+
+.imgbreak {
+  width: 100px;
+  height: auto;
+}
+.imgbreak img {
+  width: 100px;
+}
+
+.plantedFounder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #F0EFED;
+  min-height: 500px;
+}
+.plantedFounder .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+.plantedFounder .homeArticle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70%;
+  gap: 20px;
+}
+.plantedFounder img {
+  width: 300px;
+  -webkit-box-shadow: 20px 20px 0px #F8E71C;
+          box-shadow: 20px 20px 0px #F8E71C;
+}
+.plantedFounder a {
+  border: none;
+  width: 180px;
+  padding: 8px 20px;
+  color: white;
+  background-color: #0E902D;
+  font-family: "Josefin Sans", sans-serif;
+}
+.plantedFounder a:hover {
+  color: #F8E71C;
+}
+.plantedFounder a:focus {
+  background-color: rgb(0, 174, 197);
+}
+
+.gallery {
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.gallery ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+.gallery li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.homeFooter {
+  background-color: #2C2C2C;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
 .header {
   background-size: cover;
   position: relative;
@@ -700,6 +1054,180 @@ footer {
   padding: 10px;
 }
 
+@media (max-width: 1200px) {
+  .whatIsPlanted h2 {
+    font-size: 2.5rem;
+  }
+  .homeBlog {
+    gap: 75px;
+  }
+  .homeBlog .leftSide h2, .homeBlog .leftSide p {
+    padding-left: 50px;
+    text-align: right;
+    gap: 15px;
+    line-height: 1.5rem;
+  }
+  .homeBlog .rightSide h2, .homeBlog .rightSide p {
+    padding-right: 50px;
+    text-align: left;
+    gap: 15px;
+    line-height: 1.5rem;
+  }
+}
+@media (max-width: 757px) {
+  .headerHome img {
+    display: none;
+  }
+  h1 {
+    font-size: 5rem;
+  }
+  .whatIsPlanted {
+    padding: 0;
+  }
+  .whatIsPlanted .wrapper {
+    padding: 10px 10px;
+    width: 80%;
+  }
+  .whatIsPlanted .wrapper h2 {
+    font-size: 2.5rem;
+  }
+  .homeBlog {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0px;
+    padding: 50px 0;
+  }
+  .homeBlog img {
+    width: 300px;
+  }
+  .homeBlog .leftSide {
+    width: 98%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 2rem;
+  }
+  .homeBlog .leftSide img {
+    margin-top: -10px;
+  }
+  .homeBlog .leftSide h2 {
+    padding: 0;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .homeBlog .leftSide p {
+    font-size: 1rem;
+    padding: 0;
+    text-align: center;
+  }
+  .homeBlog .leftSide a {
+    -ms-flex-item-align: center;
+        align-self: center;
+    font-size: 1rem;
+  }
+  .homeBlog .rightSide {
+    width: 98%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 20px;
+    font-size: 2rem;
+  }
+  .homeBlog .rightSide img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .homeBlog .rightSide h2 {
+    padding: 0;
+    text-align: center;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .homeBlog .rightSide p {
+    font-size: 1rem;
+    padding: 0;
+    text-align: center;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .homeBlog .rightSide a {
+    -ms-flex-item-align: center;
+        align-self: center;
+    font-size: 1rem;
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  main .about .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  main .about .greenHousesBox, main .about .communityBox, main .about .blogBox, main .about .getInTouchBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .about .greenHousesBox .title, main .about .communityBox .title, main .about .blogBox .title, main .about .getInTouchBox .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 20px;
+  }
+  .plantedFounder .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .plantedFounder article {
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px 0;
+  }
+}
 @media (max-width: 500px) {
   .wrapper {
     width: 98%;
@@ -733,7 +1261,7 @@ footer {
     margin-left: 53px;
   }
   main .whatIsPlanted {
-    padding: 25px 25px;
+    padding: 10px 10px;
   }
   main .whatIsPlanted .wrapper {
     width: 98%;
@@ -858,16 +1386,22 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    position: relative;
   }
-  main .about .wrapper .greenHousesBox img, main .about .wrapper .communityBox img, main .about .wrapper .blogBox img, main .about .wrapper .getInTouchBox img {
-    position: absolute;
-    left: 130px;
-    right: 0;
+  main .about .wrapper .greenHousesBox .title, main .about .wrapper .communityBox .title, main .about .wrapper .blogBox .title, main .about .wrapper .getInTouchBox .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 5px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 20px;
   }
-  main .about .wrapper .greenHousesBox .blogIcon, main .about .wrapper .communityBox .blogIcon, main .about .wrapper .blogBox .blogIcon, main .about .wrapper .getInTouchBox .blogIcon {
-    position: absolute;
-    left: 170px;
+  main .about .wrapper .greenHousesBox .title img, main .about .wrapper .communityBox .title img, main .about .wrapper .blogBox .title img, main .about .wrapper .getInTouchBox .title img {
+    width: 25px;
   }
   main .imgBreak {
     visibility: hidden;
@@ -893,6 +1427,7 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding: 20px 0;
   }
   main .plantedFounder img {
     width: 200px;
@@ -937,21 +1472,24 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    position: relative;
   }
-  main .about .wrapper .greenHousesBox img, main .about .wrapper .communityBox img, main .about .wrapper .blogBox img, main .about .wrapper .getInTouchBox img {
-    position: absolute;
-    left: 80px;
-    right: 0;
+  main .about .wrapper .greenHousesBox .title, main .about .wrapper .communityBox .title, main .about .wrapper .blogBox .title, main .about .wrapper .getInTouchBox .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 5px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 20px;
   }
-  main .about .wrapper .greenHousesBox .blogIcon, main .about .wrapper .communityBox .blogIcon, main .about .wrapper .blogBox .blogIcon, main .about .wrapper .getInTouchBox .blogIcon {
-    position: absolute;
-    left: 120px;
-  }
-  main .gallery {
+  main .about .gallery {
     padding: 0;
   }
-  main .gallery ul {
+  main .about .gallery ul {
     padding: 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -962,335 +1500,4 @@ footer {
             flex-direction: column;
     gap: 0px;
   }
-}
-.headerHome {
-  background-image: url(../planted-final-assets/home-image-1.jpg);
-  background-size: cover;
-  position: relative;
-  height: 100vh;
-  min-height: 700px;
-}
-.headerHome .wrapper {
-  margin: auto;
-  width: 100%;
-  height: 100%;
-}
-.headerHome img {
-  width: 700px;
-  position: absolute;
-  right: 0;
-  top: 350px;
-  z-index: 10;
-}
-.headerHome nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  color: white;
-}
-.headerHome li {
-  font-family: "Josefin Sans", sans-serif;
-}
-.headerHome .logo {
-  padding-top: 10px;
-  color: white;
-  font-family: "Josefin Sans", sans-serif;
-  z-index: 20;
-}
-.headerHome a {
-  color: white;
-  text-decoration: none;
-}
-.headerHome a:hover {
-  color: #F8E71C;
-}
-.headerHome a:focus {
-  background-color: rgb(0, 174, 197);
-}
-.headerHome ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style: none;
-  gap: 20px;
-}
-.headerHome .headerText {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: left;
-  margin-top: 300px;
-  font-size: 3.5rem;
-}
-.headerHome h1 {
-  z-index: 20;
-  color: white;
-}
-.headerHome .headerTextYellow {
-  color: #F8E71C;
-  margin-left: 130px;
-  z-index: 20;
-}
-
-.whatIsPlanted {
-  background-color: #F0EFED;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  min-height: 700px;
-  padding: 50px 50px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.whatIsPlanted .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 30px;
-  width: 60%;
-}
-.whatIsPlanted h2 {
-  font-size: 4rem;
-}
-.whatIsPlanted p {
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-  line-height: 1.5rem;
-}
-.whatIsPlanted a {
-  border: none;
-  padding: 8px 20px;
-  color: white;
-  background-color: #0E902D;
-  font-family: "Josefin Sans", sans-serif;
-}
-.whatIsPlanted a:hover {
-  color: #F8E71C;
-}
-.whatIsPlanted a:focus {
-  background-color: rgb(0, 174, 197);
-}
-
-.homeBlog {
-  background-color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 200px;
-  min-height: 700px;
-}
-.homeBlog .wrapper {
-  width: 100%;
-}
-.homeBlog a {
-  border: none;
-  padding: 8px 20px;
-  color: white;
-  background-color: #0E902D;
-  font-family: "Josefin Sans", sans-serif;
-  width: 150px;
-}
-.homeBlog a:hover {
-  color: #F8E71C;
-}
-.homeBlog a:focus {
-  background-color: rgb(0, 174, 197);
-}
-.homeBlog .leftSide, .homeBlog .rightSide {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 30px;
-}
-.homeBlog .leftSide h2, .homeBlog .rightSide h2 {
-  font-size: 2rem;
-}
-.homeBlog .rightSide {
-  margin-top: 200px;
-}
-.homeBlog .rightSide img {
-  -webkit-box-shadow: -20px 20px 0px #F8E71C;
-          box-shadow: -20px 20px 0px #F8E71C;
-  margin-top: 50px;
-}
-.homeBlog .leftSide {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-.homeBlog .leftSide h2 {
-  margin-top: 100px;
-}
-.homeBlog .leftSide h2, .homeBlog .leftSide p {
-  padding-left: 250px;
-  text-align: right;
-  gap: 25px;
-  line-height: 1.5rem;
-}
-.homeBlog .leftSide a {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-}
-.homeBlog .leftSide img {
-  margin-top: -50px;
-  -webkit-box-shadow: 20px 20px 0px #F8E71C;
-          box-shadow: 20px 20px 0px #F8E71C;
-}
-
-.about {
-  background-color: #F0EFED;
-  min-height: 600px;
-  padding-top: 150px;
-  padding-bottom: 100px;
-}
-.about .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-.about .wrapper .greenHousesBox, .about .wrapper .communityBox, .about .wrapper .blogBox, .about .wrapper .getInTouchBox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
-  line-height: 1.5rem;
-  gap: 20px;
-  position: relative;
-}
-.about .wrapper .greenHousesBox h3, .about .wrapper .communityBox h3, .about .wrapper .blogBox h3, .about .wrapper .getInTouchBox h3 {
-  margin-top: 25px;
-}
-.about .wrapper .greenHousesBox img, .about .wrapper .communityBox img, .about .wrapper .blogBox img, .about .wrapper .getInTouchBox img {
-  width: 25px;
-  position: absolute;
-  left: -35px;
-  top: 25px;
-  background-color: #F8E71C;
-  border-radius: 50%;
-}
-
-.imgbreak {
-  width: 100px;
-  height: auto;
-}
-.imgbreak img {
-  width: 100px;
-}
-
-.plantedFounder {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: #F0EFED;
-  min-height: 500px;
-}
-.plantedFounder .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 30px;
-}
-.plantedFounder .homeArticle {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 70%;
-  gap: 20px;
-}
-.plantedFounder img {
-  width: 300px;
-  -webkit-box-shadow: 20px 20px 0px #F8E71C;
-          box-shadow: 20px 20px 0px #F8E71C;
-}
-.plantedFounder a {
-  border: none;
-  width: 180px;
-  padding: 8px 20px;
-  color: white;
-  background-color: #0E902D;
-  font-family: "Josefin Sans", sans-serif;
-}
-.plantedFounder a:hover {
-  color: #F8E71C;
-}
-.plantedFounder a:focus {
-  background-color: rgb(0, 174, 197);
-}
-
-.gallery {
-  padding: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.gallery ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 20px;
-}
-.gallery li {
-  text-decoration: none;
-  list-style: none;
-}
-
-.homeFooter {
-  background-color: #2C2C2C;
-  color: white;
-  text-align: center;
-  padding: 10px;
 }
