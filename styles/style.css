@@ -733,8 +733,6 @@ footer {
     margin-left: 53px;
   }
   main .whatIsPlanted {
-    height: 75vh;
-    min-height: 800px;
     padding: 25px 25px;
   }
   main .whatIsPlanted .wrapper {
@@ -742,6 +740,7 @@ footer {
   }
   main .whatIsPlanted .wrapper h2 {
     font-size: 2rem;
+    text-align: center;
   }
   main .homeBlog {
     display: -webkit-box;
@@ -752,8 +751,7 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 0px;
-    height: 120vh;
-    min-height: 1000px;
+    padding: 50px 0;
   }
   main .homeBlog img {
     width: 300px;
@@ -837,8 +835,6 @@ footer {
             order: 4;
   }
   main .about {
-    height: 110vh;
-    min-height: 1200px;
     padding: 50px 10px;
   }
   main .about .wrapper {
@@ -874,15 +870,14 @@ footer {
     left: 170px;
   }
   main .imgBreak {
-    height: 100%;
+    visibility: hidden;
+    height: 0px;
   }
   main .plantedFounder {
-    height: 75vh;
-    min-height: 1000px;
+    padding: 50px 0px;
   }
   main .plantedFounder .wrapper {
     gap: 0px;
-    margin-top: 50px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -902,16 +897,24 @@ footer {
   main .plantedFounder img {
     width: 200px;
   }
+  main .gallery {
+    padding: 0;
+  }
+  main .gallery ul {
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0px;
+  }
 }
 @media (max-width: 390px) {
   .headerHome .wrapper .headerTextYellow {
     margin-left: 3px;
-  }
-  main .homeBlog {
-    height: 135vh;
-  }
-  main .about {
-    height: 125vh;
   }
   main .about .wrapper {
     display: -webkit-box;
@@ -945,8 +948,19 @@ footer {
     position: absolute;
     left: 120px;
   }
-  main .plantedFounder {
-    height: 100vh;
+  main .gallery {
+    padding: 0;
+  }
+  main .gallery ul {
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0px;
   }
 }
 .headerHome {
@@ -954,7 +968,7 @@ footer {
   background-size: cover;
   position: relative;
   height: 100vh;
-  min-height: 900px;
+  min-height: 700px;
 }
 .headerHome .wrapper {
   margin: auto;
@@ -1034,7 +1048,7 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 700px;
+  min-height: 700px;
   padding: 50px 50px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -1089,7 +1103,7 @@ footer {
   display: -ms-flexbox;
   display: flex;
   gap: 200px;
-  height: 900px;
+  min-height: 700px;
 }
 .homeBlog .wrapper {
   width: 100%;
@@ -1155,7 +1169,7 @@ footer {
 
 .about {
   background-color: #F0EFED;
-  height: 600px;
+  min-height: 600px;
   padding-top: 150px;
   padding-bottom: 100px;
 }
@@ -1209,7 +1223,7 @@ footer {
   display: -ms-flexbox;
   display: flex;
   background-color: #F0EFED;
-  height: 500px;
+  min-height: 500px;
 }
 .plantedFounder .wrapper {
   display: -webkit-box;

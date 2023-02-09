@@ -53,14 +53,14 @@
 
 main {
     .whatIsPlanted{
-        height: 75vh;
-        min-height: 800px;
+  
         padding: 25px 25px;
         .wrapper {
             width: 98%;
         
             h2 {
                 font-size: 2rem;
+                text-align: center;
             }
 
         }   
@@ -74,8 +74,8 @@ main {
         display: flex;
         flex-direction: column;
         gap: 0px;
-        height: 120vh;
-        min-height: 1000px;
+        padding: 50px 0;
+       
 
         img {
             width: 300px;
@@ -140,8 +140,6 @@ main {
 
 }
 .about {
-    height: 110vh;
-    min-height: 1200px;
     padding: 50px 10px;
 
     .wrapper {
@@ -169,15 +167,14 @@ main {
 }
 
 .imgBreak {
-    height: 100%;
+    visibility: hidden;
+    height: 0px;
+
 }
 .plantedFounder {
-    height: 75vh;
-    min-height: 1000px;
-
+    padding:50px 0px ;
     .wrapper {
         gap: 0px;
-        margin-top: 50px;
         display: flex;
         flex-direction: column;
         article {
@@ -190,6 +187,17 @@ main {
         width: 200px;
     }
 
+}
+
+.gallery{
+    padding: 0;
+   
+    ul{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap:0px;
+    }
 }
 }
 }
@@ -205,11 +213,10 @@ main {
 
     main {
         .homeBlog {
-            height: 135vh;
         }
     
         .about {
-        height:125vh;
+      
 
         .wrapper {
             display: flex;
@@ -236,8 +243,24 @@ main {
     }
 
    .plantedFounder {
-    height: 100vh;
+    
    } 
+
+
+   .gallery{
+        padding: 0;
+       
+        ul{
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap:0px;
+        }
+      
+          
+  
+
+   }
 }
 }
 
