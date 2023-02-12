@@ -39,6 +39,25 @@
     }
 }
 
+@media (max-width:997px){
+
+
+
+    .headerHome .wrapper img
+     {  justify-content: flex-start;
+        width: 250px;
+        position: relative;
+        align-items: center;
+    }
+    .whatIsPlanted{
+        padding: 0;
+        .wrapper{
+            padding: 10px 10px;
+            width: 90%;
+        }
+    }
+
+}
 @media (max-width:757px){
     .headerHome{
 
@@ -318,9 +337,7 @@ main {
                 justify-content:center ;
                 margin-top: 20px;
             
-            img {
-                width: 25px;
-            }
+          
             }
         
         }

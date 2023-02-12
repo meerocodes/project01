@@ -17,6 +17,13 @@
         margin: auto;
         width: 100%;
         height: 100%;
+
+        .logo {
+            color: white;
+            font-family: $baseFont;
+            z-index: 20;
+            align-self: center;
+        }
         
     }
     nav {
@@ -31,6 +38,7 @@
     }
     h1 {
         padding-top: 10px;
+        
         color: white;
         font-family: $baseFont;
        
@@ -123,7 +131,7 @@
             border: none;
             width: 100%;
             padding:10px 0;
-            margin-top: 40px;
+            margin-top: 13px;
             color: $navFontColor;
             text-decoration: none;
             &:hover {
@@ -153,12 +161,38 @@
 }
 
 .contactInfo {
-    margin-top: 150px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    .socialIconContact ul {
+        width: 100%;
+        gap:20px ;
+        display: flex;
+        justify-content: flex-start;
+        img:hover {
+            transform: scale(1.2);
+            transition: .2s;
 
-    ul {
+            :focus{
+                background-color: $hoverFontColor;
+            }
+            
+        }
+        
+    }
+    h2 {
+        color: black;
+    }
+
+     ul {
         padding: 0 0;
         line-height: 1.5rem;
+        
+        li {
+        font-family: $secondaryFont;
+        color: black;
+        }
     }
+
 }
 
 
