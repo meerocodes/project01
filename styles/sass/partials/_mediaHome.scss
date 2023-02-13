@@ -227,32 +227,43 @@
     width: 98% ;
     max-width: 500px ;
     margin: 0 auto;
+    
+    .navHome{
+        
+        justify-content: flex-start;
+       
+    }
+    .logo{
+        padding: 0;
+        margin: 0;
+    }
   
 
 }
 
+
     .headerHome {
-        nav 
+       
         img {
             visibility: hidden;
         }
         
         ul {
-            visibility: hidden;
-            width: 0;
+            visibility:hidden;
+            flex-basis: 0px;
+            padding: 0;
         }
         li {
             visibility: hidden;
             width: 0;
+            padding: 0;
         }
         a{
             visibility: hidden;
             width: 0px;
+            padding: 0;
         }
-        .logo{
-            align-self: center;
-            margin-left: 20px;
-        }
+    
         .headerText {
             h1 {
             font-size: 3.5rem;
