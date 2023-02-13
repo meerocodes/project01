@@ -1,0 +1,79 @@
+@use "./variables" as *;
+@use "./setup";
+@use "./global";
+@use "./typography";
+@use "./mixins" as *;
+@use "./contact" as *;
+@use "./nav" as *;
+
+@media (max-width: 850px) {
+
+    .contact .wrapper nav{
+        h2 {
+            text-align: center;
+        }
+        justify-content: center; 
+        ul {
+            visibility: none;
+            width: 0;
+            padding: 0;
+        }
+        li {
+            visibility: none;
+            width: 0;
+        }
+        a{
+            visibility: hidden;
+            width: 0px;
+        }
+
+        .wrapper  {
+            justify-content:  center;        
+        }
+    }
+
+    header.contact {
+        .wrapper .getInTouch {
+        text-align: center;
+        margin-top: 150px;
+      
+        }
+    }
+    .contactPage {
+        flex-direction: column-reverse;
+        height: 790px;
+
+
+        .wrapper {
+            display: flex;
+            margin: 0;
+            flex-direction: column-reverse;
+            align-items: center;
+            width: 100%;
+            align-items:center ;
+
+            form {
+                position: static;
+                width: 97%;
+                margin: 0;
+                box-shadow: none;
+
+
+            }
+        }
+    }
+    .contactInfo {
+        justify-content:center ;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+
+        
+        
+        
+     
+    }
+  
+}

@@ -1,0 +1,161 @@
+@use "./variables" as *;
+@use "./setup";
+@use "./global";
+@use "./typography";
+@use "./mixins" as *;
+@use "./contact" as *;
+@use "./nav" as *;
+@use "./blog" as *;
+
+
+@media (max-width: 997px) {
+    .blogHeader {
+        h1 {
+            margin-left: 50px;
+        }
+
+    }
+ 
+    
+    .articleBlog{
+        margin-right: 40px;
+    }
+    .comments {
+        width: 90%;
+    }
+}
+
+@media (max-width:730px) {
+
+
+    .navBlog{
+        h2 {
+            text-align: center;
+        }
+        ul {
+            visibility: none;
+            width: 0;
+            padding: 0;
+        }
+        li {
+            visibility: none;
+            width: 0;
+        }
+        a{
+            visibility: hidden;
+            width: 0px;
+        }
+
+        .wrapper  {
+            justify-content:  center;        
+        }
+     
+
+    }   
+    .blogHeader{
+    .blogTitle{
+        width: 100%;
+        margin: 0;
+    }
+        h1{
+            text-align: center;
+            justify-content: center;
+        }
+    }
+
+    .blogMain {
+        flex-direction: column;
+    }
+    .blogArticle {
+        width: 100%;
+        display: flex;
+        top:-70px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        .imgBlog{
+            width: 65%;
+            box-shadow: none;
+        
+            img {
+                box-shadow: -10px 10px $hoverFontColor;
+
+            }
+        }
+        .articleBlog{
+            border: none;
+            border-bottom: 5px solid $hoverFontColor;
+            width: 100%;
+            margin: 0;
+            padding: 25px 15px;
+           
+        }
+        .comments{
+            img {
+                width: clamp(4rem, 2vw, .8rem);
+            }
+
+        }
+        .firstComment, .secondComment {
+            padding-left: 90px;
+        }
+
+    }
+    aside{
+        position: static;
+        margin: 0;
+        width: 98%;
+        align-items: center;
+        background-color: $secondaryBG;
+
+
+        .asideContent{
+            position: relative;
+            top: -90px;
+            display: flex;
+            flex-direction: column;
+            padding: 10px 10px;
+            margin-top:-10;
+            justify-content: center;
+            align-items: center;
+            background-color: transparent;
+            width: 100%;
+            right: 0;
+            left: 0;
+            h3{
+                font-size: clamp(1.3rem, 2vh, 1rem)
+            }
+            .imgAside {
+                width: 65% ;
+                position:static;
+                margin-bottom: 30px;
+
+            }
+            .asideImg{
+                box-shadow: -10px 10px $hoverFontColor;
+        
+            }
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+
+            }
+            li {
+                width: calc(50% - 20px);
+                margin-left: 20px;
+
+            }
+            li:before{
+                content: "•"; 
+                color: $blogComments;
+                padding-right: 10px;
+
+
+        
+            }
+
+           
+        }
+    }
+    
+}

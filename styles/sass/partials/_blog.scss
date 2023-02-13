@@ -27,9 +27,7 @@
         display: flex;
         gap: 20px;
     }
-    h1 {
-        padding-top: 10px;
-    }
+ 
      
 }
 
@@ -53,16 +51,14 @@ li {
 
 .blogHeader {
     background-image: url(../planted-final-assets/blog-header-1.jpg);
-    height: 50vh;
-    min-height: 300px;
+    min-height: 400px;
     .wrapper {
-        width: 100%;
+        height: 100%;
     }
 
     h1 {
         position: relative;
-        top: 300px;
-        margin-left: 100px;
+        top: 200px;
         font-size: 3rem;
         color: $hoverFontColor;
     }
@@ -216,6 +212,14 @@ aside {
     margin-top: 20px;
     margin-left: 25px;
     font-size: clamp(.8rem, 2vw, 1rem);
+    p {
+        font-family: $secondaryFont;
+        margin-top: 20px;
+    }
+    h3 {
+        color: $blogComments;
+
+    }
 
 }
 .firstComment {
