@@ -29,11 +29,20 @@
 
 
     .navBlog{
+        .wrapper  {
+            width: 100%;           
+            margin: 0;
+            padding: 0;
+            .logo {
+                padding-left:110px ;
+            }
+         
+        }
         #homeButton{
             visibility: visible;
             text-align: center;
             width: 125px;
-            height: 0px;
+            height: 10px;
             :focus {
                 color:lightblue;
                 opacity: 20;
@@ -52,17 +61,18 @@
         }
         li {
             visibility: collapse;
-            width: 0
+            width: 0;
+            padding: 0;
+
             
         }
         a{
             visibility: collapse;
             width: 0;
+            padding: 0;
         }
      
-        .wrapper  {
-            justify-content:  center;        
-        }
+      
        
      
 

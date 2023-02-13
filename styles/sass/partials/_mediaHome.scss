@@ -40,24 +40,6 @@
 }
 
 @media (max-width:997px){
-    .headerHome {
-        img {
-            visibility: hidden;
-        }
-        
-        ul {
-            visibility: hidden;
-            width: 0;
-        }
-        li {
-            visibility: hidden;
-            width: 0;
-        }
-        a{
-            visibility: hidden;
-            width: 0px;
-        }
-    }
 
 
     .headerHome .wrapper img
@@ -94,6 +76,25 @@
 
 }
 @media (max-width:757px){
+
+    .headerHome {
+        img {
+            visibility: hidden;
+        }
+        
+        ul {
+            visibility: hidden;
+            width: 0;
+        }
+        li {
+            visibility: hidden;
+            width: 0;
+        }
+        a{
+            visibility: hidden;
+            width: 0px;
+        }
+    }
     .headerHome{
 
         img{
@@ -222,6 +223,9 @@
 }
 
 @media (max-width:500px) {
+
+
+
 
 .wrapper {
     width: 98% ;
