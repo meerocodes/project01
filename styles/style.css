@@ -1429,12 +1429,7 @@ footer {
     max-width: 500px;
     margin: 0 auto;
   }
-  .headerHome nav {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .headerHome img {
+  .headerHome nav img {
     visibility: hidden;
   }
   .headerHome ul {
@@ -1908,6 +1903,7 @@ footer {
   header.contact .wrapper .getInTouch {
     text-align: center;
     margin-top: 150px;
+    padding-right: 100px;
   }
   header.contact .wrapper nav {
     -webkit-box-pack: center;
@@ -1922,6 +1918,7 @@ footer {
     -ms-flex-item-align: center;
         align-self: center;
     visibility: visible;
+    margin-left: -40px;
   }
   .contactPage {
     -webkit-box-orient: vertical;

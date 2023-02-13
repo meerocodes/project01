@@ -22,6 +22,8 @@
     .contact .wrapper nav{
         h2 {
             text-align: center;
+
+
         }
         justify-content: center; 
         ul {
@@ -50,6 +52,7 @@
             .getInTouch {
             text-align: center;
             margin-top: 150px;
+            padding-right: 100px;
         
             }
             nav {
@@ -63,6 +66,8 @@
                 z-index: 20;
                 align-self: center;
                 visibility: visible;
+                margin-left: -40px;
+
             }
         }
     }
