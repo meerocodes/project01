@@ -40,7 +40,24 @@
 }
 
 @media (max-width:997px){
-
+    .headerHome {
+        img {
+            visibility: hidden;
+        }
+        
+        ul {
+            visibility: hidden;
+            width: 0;
+        }
+        li {
+            visibility: hidden;
+            width: 0;
+        }
+        a{
+            visibility: hidden;
+            width: 0px;
+        }
+    }
 
 
     .headerHome .wrapper img
@@ -48,6 +65,7 @@
         width: 250px;
         position: relative;
         align-items: center;
+        visibility: hidden;
     }
     .whatIsPlanted{
         padding: 0;
@@ -56,6 +74,23 @@
             width: 90%;
         }
     }
+    .about .wrapper{
+
+   
+        .greenHousesBox, .communityBox, .blogBox, .getInTouchBox {
+            display: flex;
+            flex-direction: column;
+
+            .title{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+
+            }
+        }
+    }
+
+
 
 }
 @media (max-width:757px){
@@ -197,6 +232,9 @@
 }
 
     .headerHome {
+        nav {
+            justify-content: center;
+        }
         img {
             visibility: hidden;
         }

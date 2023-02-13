@@ -8,6 +8,17 @@
 
 @media (max-width: 850px) {
 
+    .contact {
+        .mobileIcons {
+            display: flex;
+            gap: 20px;
+            width: 100px;
+            visibility: visible;
+            position: relative;
+            left: 20px;
+            top: 15px;
+        }
+    }
     .contact .wrapper nav{
         h2 {
             text-align: center;
@@ -30,13 +41,29 @@
         .wrapper  {
             justify-content:  center;        
         }
+       
     }
+ 
 
     header.contact {
-        .wrapper .getInTouch {
-        text-align: center;
-        margin-top: 150px;
-      
+        .wrapper {
+            .getInTouch {
+            text-align: center;
+            margin-top: 150px;
+        
+            }
+            nav {
+                justify-content: center;
+                padding-right: 120px;
+
+            }
+            nav a .logo {
+                color: white;
+                font-family: $baseFont;
+                z-index: 20;
+                align-self: center;
+                visibility: visible;
+            }
         }
     }
     .contactPage {

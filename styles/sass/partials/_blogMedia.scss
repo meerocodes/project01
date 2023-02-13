@@ -29,33 +29,59 @@
 
 
     .navBlog{
+        #homeButton{
+            visibility: visible;
+            text-align: center;
+            width: 125px;
+            height: 0px;
+            :focus {
+                color:lightblue;
+                opacity: 20;
+            }
+            
+        }
+      
         h2 {
             text-align: center;
         }
         ul {
-            visibility: none;
+            visibility: collapse;
             width: 0;
             padding: 0;
+       
         }
         li {
-            visibility: none;
-            width: 0;
+            visibility: collapse;
+            width: 0
+            
         }
         a{
-            visibility: hidden;
-            width: 0px;
+            visibility: collapse;
+            width: 0;
         }
-
+     
         .wrapper  {
             justify-content:  center;        
         }
+       
      
 
     }   
     .blogHeader{
+       .wrapper .mobileIcons {
+        width: 75px;
+        visibility:visible;
+        position: relative;
+        right: 10px;
+        left: 10px;
+        top: -50px;
+        display: flex;
+        gap: 20px;
+    }
     .blogTitle{
         width: 100%;
         margin: 0;
+
     }
         h1{
             text-align: center;
