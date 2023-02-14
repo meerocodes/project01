@@ -6,6 +6,7 @@
 @use "./nav" as *;
 @use "./contact" as *;
 
+// NAV------
 .navBlog {
     display: flex;
     justify-content: flex-start;
@@ -61,6 +62,7 @@ li {
     font-family: $baseFont;
 }
 
+// HEADER------
 .blogHeader {
     background-image: url(../planted-final-assets/blog-header-1.jpg);
     min-height: 400px;
@@ -83,11 +85,11 @@ li {
     
 }
 
-.navMain{
-    display: flex;
-    flex-direction: column;
-}
-
+// .navMain{
+//     display: flex;
+//     flex-direction: column;
+// }
+// ASIDE--------
 .asideImg {
     width: 100%;
     margin-top: -15px;
@@ -176,7 +178,7 @@ aside {
 
     }
 }
-
+// MAIN ARTICLE-------
 .blogArticle{
     width: 60%;
     position: relative;
@@ -222,7 +224,7 @@ aside {
 
     }
 }
-
+// COMMENTS-----
 .comments {
     display: flex;
     flex-direction: column;
@@ -269,7 +271,7 @@ aside {
 }
 
 
-
+// FORM------
 
 form {
 box-sizing: border-box;
