@@ -4,11 +4,8 @@
 @use "./variables" as *;
 @use "./typography";
 
-.mobileIcons {
-    width: 25px;
-    margin-bottom: -100px;
-    
-}
+
+
 .headerHome {
     background-image: url(../planted-final-assets/home-image-1.jpg);
     background-size: cover;
@@ -16,11 +13,16 @@
     height: 100vh;
     min-height: 700px;
 
+ 
+
 
     .wrapper {
         margin: auto;
         width: 80%;
         height: 100%;
+
+     
+        
     
      
     }

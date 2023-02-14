@@ -255,11 +255,6 @@ h1, h2, h3, h4, p, a {
   text-decoration: none;
 }
 
-.mobileIcons {
-  width: 25px;
-  margin-bottom: -100px;
-}
-
 .headerHome {
   background-image: url(../planted-final-assets/home-image-1.jpg);
   background-size: cover;
@@ -672,6 +667,55 @@ h1, h2, h3, h4, p, a {
   gap: 20px;
 }
 
+.mobileIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  width: 75px;
+  display: none;
+}
+
+.navContact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  color: white;
+  height: 50px;
+  background: black;
+}
+.navContact .wrapper {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.navContact .wrapper .logo {
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  z-index: 20;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+.navContact ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+li {
+  font-family: "Josefin Sans", sans-serif;
+}
+
 .contact {
   background-image: url(../planted-final-assets/contact-header-1.jpg);
   background-size: cover;
@@ -682,66 +726,50 @@ h1, h2, h3, h4, p, a {
   display: -ms-flexbox;
   display: flex;
 }
-.contact .mobileIcons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 20px;
-  width: 75px;
-  visibility: collapse;
-}
-.contact .wrapper {
-  margin: auto;
-  width: 100%;
-  height: 100%;
-}
-.contact .wrapper .logo {
-  color: white;
-  font-family: "Josefin Sans", sans-serif;
-  z-index: 20;
-  -ms-flex-item-align: center;
-      align-self: center;
-}
-.contact nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  color: white;
-}
-.contact li {
-  font-family: "Josefin Sans", sans-serif;
-}
-.contact h1 {
+
+h1 {
   padding-top: 10px;
   color: white;
   font-family: "Josefin Sans", sans-serif;
 }
-.contact .getInTouch {
+
+.contact {
+  background-image: url(../planted-final-assets/contact-header-1.jpg);
+  background-size: cover;
+  position: relative;
+  height: 50vh;
+  min-height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.getInTouch {
   color: #F8E71C;
   font-size: 3rem;
   margin-top: 250px;
 }
-.contact a {
+
+a {
   color: white;
   text-decoration: none;
 }
-.contact a:hover {
+a:hover {
   color: #F8E71C;
 }
-.contact a:focus {
+a:focus {
   background-color: rgb(0, 174, 197);
 }
-.contact ul {
+
+ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style: none;
   gap: 20px;
 }
-.contact span {
+
+span {
   display: block;
 }
 
@@ -821,6 +849,15 @@ h1, h2, h3, h4, p, a {
   margin-top: 100px;
   margin-bottom: 20px;
 }
+.contactInfo ul {
+  padding: 0 0;
+  line-height: 1.5rem;
+  display: block;
+}
+.contactInfo ul li {
+  font-family: "Roboto", sans-serif;
+  color: black;
+}
 .contactInfo .socialIconContact ul {
   width: 100%;
   gap: 20px;
@@ -841,14 +878,6 @@ h1, h2, h3, h4, p, a {
   background-color: #F8E71C;
 }
 .contactInfo h2 {
-  color: black;
-}
-.contactInfo ul {
-  padding: 0 0;
-  line-height: 1.5rem;
-}
-.contactInfo ul li {
-  font-family: "Roboto", sans-serif;
   color: black;
 }
 
@@ -881,6 +910,9 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .navBlog .mobileIcons {
   display: -webkit-box;
@@ -908,13 +940,6 @@ a:hover {
 a:focus {
   background-color: rgb(0, 174, 197);
 }
-a h2 {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  top: 15px;
-}
-
 li {
   font-family: "Josefin Sans", sans-serif;
 }
@@ -1018,6 +1043,9 @@ aside p {
 }
 aside ul {
   padding: 0;
+  gap: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 aside li {
   font-family: "Roboto", sans-serif;
@@ -1255,26 +1283,37 @@ footer {
   }
 }
 @media (max-width: 757px) {
+  .mobileIcons {
+    z-index: 50;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 75px;
+    position: relative;
+    bottom: -10px;
+    left: 20px;
+    height: 0px;
+    z-index: 40;
+    visibility: visible;
+  }
   .headerHome img {
     visibility: hidden;
   }
+  .headerHome .navHome {
+    width: 100%;
+    height: 50px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .headerHome ul {
-    visibility: hidden;
-    width: 0;
-  }
-  .headerHome li {
-    visibility: hidden;
-    width: 0;
-  }
-  .headerHome a {
-    visibility: hidden;
-    width: 0px;
+    display: none;
   }
   .headerHome img {
     display: none;
   }
   h1 {
-    font-size: 5rem;
+    font-size: clamp(3.5rem, 4vh, 5rem);
   }
   .whatIsPlanted {
     padding: 0;
@@ -1430,37 +1469,22 @@ footer {
     margin: 0 auto;
   }
   .wrapper .navHome {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-  }
-  .wrapper .logo {
-    padding: 0;
-    margin: 0;
+    width: 100%;
+    height: 50px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .headerHome img {
-    visibility: hidden;
+    display: none;
   }
   .headerHome ul {
-    visibility: hidden;
-    -ms-flex-preferred-size: 0px;
-        flex-basis: 0px;
-    padding: 0;
+    display: none;
   }
-  .headerHome li {
-    visibility: hidden;
-    width: 0;
-    padding: 0;
-  }
-  .headerHome a {
-    visibility: hidden;
-    width: 0px;
-    padding: 0;
-  }
-  .headerHome .headerText h1 {
+  .headerHome ul .headerText h1 {
     font-size: 3.5rem;
   }
-  .headerHome .wrapper .headerTextYellow {
+  .headerHome ul .wrapper .headerTextYellow {
     margin-left: 53px;
   }
   main .whatIsPlanted {
@@ -1712,20 +1736,25 @@ footer {
     width: 90%;
   }
 }
-@media (max-width: 730px) {
+@media (max-width: 850px) {
+  .navBlog {
+    height: 63px;
+  }
   .navBlog .wrapper {
     width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  .navBlog .wrapper .logo {
-    padding-left: 110px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .navBlog #homeButton {
     visibility: visible;
     text-align: center;
-    width: 125px;
-    height: 10px;
   }
   .navBlog #homeButton :focus {
     color: lightblue;
@@ -1735,17 +1764,7 @@ footer {
     text-align: center;
   }
   .navBlog ul {
-    visibility: collapse;
-    width: 0;
-    padding: 0;
-  }
-  .navBlog li {
-    visibility: collapse;
-    width: 0;
-    padding: 0;
-  }
-  .navBlog a {
-    visibility: collapse;
+    display: none;
     width: 0;
     padding: 0;
   }
@@ -1753,13 +1772,11 @@ footer {
     width: 75px;
     visibility: visible;
     position: relative;
-    right: 10px;
-    left: 10px;
-    top: -50px;
+    top: -40px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 20px;
+    gap: 15px;
   }
   .blogHeader .blogTitle {
     width: 100%;
@@ -1876,53 +1893,38 @@ footer {
   }
 }
 @media (max-width: 850px) {
+  .navContact {
+    background-color: black;
+  }
+  .navContact .wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navContact .wrapper ul {
+    display: none;
+  }
   .contact .mobileIcons {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     gap: 20px;
-    width: 100px;
+    width: 85px;
     visibility: visible;
     position: relative;
     left: 20px;
-    top: 15px;
+    top: -42px;
   }
-  .contact .wrapper nav {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .contact .wrapper nav h2 {
-    text-align: center;
-  }
-  .contact .wrapper nav ul {
-    visibility: none;
-    width: 0;
-    padding: 0;
-  }
-  .contact .wrapper nav li {
-    visibility: none;
-    width: 0;
-  }
-  .contact .wrapper nav a {
-    visibility: hidden;
-    width: 0px;
-  }
-  .contact .wrapper nav .wrapper {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  header.contact .wrapper {
+    width: 100%;
   }
   header.contact .wrapper .getInTouch {
     text-align: center;
-    margin-top: 150px;
-    padding-right: 100px;
   }
   header.contact .wrapper nav {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-right: 120px;
   }
   header.contact .wrapper nav a .logo {
     color: white;

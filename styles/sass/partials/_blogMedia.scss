@@ -25,24 +25,24 @@
     }
 }
 
-@media (max-width:730px) {
+@media (max-width:850px) {
 
 
     .navBlog{
+        height: 63px;
         .wrapper  {
-            width: 100%;           
-            margin: 0;
-            padding: 0;
-            .logo {
-                padding-left:110px ;
-            }
+            width: 100%;  
+            justify-content: center;  
+            align-items: center;  
+            display: flex;     
+   
+        
          
         }
         #homeButton{
             visibility: visible;
             text-align: center;
-            width: 125px;
-            height: 10px;
+            
             :focus {
                 color:lightblue;
                 opacity: 20;
@@ -54,23 +54,12 @@
             text-align: center;
         }
         ul {
-            visibility: collapse;
+            display: none;
             width: 0;
             padding: 0;
        
         }
-        li {
-            visibility: collapse;
-            width: 0;
-            padding: 0;
 
-            
-        }
-        a{
-            visibility: collapse;
-            width: 0;
-            padding: 0;
-        }
      
       
        
@@ -82,11 +71,9 @@
         width: 75px;
         visibility:visible;
         position: relative;
-        right: 10px;
-        left: 10px;
-        top: -50px;
+        top: -40px;
         display: flex;
-        gap: 20px;
+        gap: 15px;
     }
     .blogTitle{
         width: 100%;
