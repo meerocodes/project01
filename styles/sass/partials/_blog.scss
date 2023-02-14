@@ -65,7 +65,7 @@ li {
 // HEADER------
 .blogHeader {
     background-image: url(../planted-final-assets/blog-header-1.jpg);
-    min-height: 400px;
+    min-height: 430px;
     .wrapper {
         height: 100%;
         .mobileIcons {
@@ -85,10 +85,7 @@ li {
     
 }
 
-// .navMain{
-//     display: flex;
-//     flex-direction: column;
-// }
+
 // ASIDE--------
 .asideImg {
     width: 100%;
@@ -208,10 +205,11 @@ aside {
         font-style: italic;
         color: $blogComments;
         font-weight: 400;
-        font-size: clamp(.8rem, 2vw, 1rem);
+        font-size: clamp(.7rem, 2vw, 1rem);
 
         span{
             font-weight: 700;
+            display: inline;
         }
 
     }

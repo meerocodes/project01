@@ -260,15 +260,19 @@ h1, h2, h3, h4, p, a {
   background-size: cover;
   position: relative;
   height: 100vh;
-  min-height: 700px;
+  min-height: 900px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 .headerHome .wrapper {
   margin: auto;
   width: 80%;
-  height: 100%;
+  min-height: 100%;
 }
 .headerHome img {
-  width: 700px;
+  width: clamp(300px, 100%, 700px);
   position: absolute;
   right: 0;
   top: 350px;
@@ -325,7 +329,7 @@ h1, h2, h3, h4, p, a {
           align-items: center;
   text-align: left;
   margin-top: 300px;
-  font-size: 3.5rem;
+  font-size: clamp(3.5rem, 2vw, 1rem);
 }
 .headerHome h1 {
   z-index: 20;
@@ -376,7 +380,7 @@ h1, h2, h3, h4, p, a {
   width: 60%;
 }
 .whatIsPlanted h2 {
-  font-size: 4rem;
+  font-size: clamp(4rem, 2vw, 2.5rem);
 }
 .whatIsPlanted p {
   text-align: center;
@@ -946,7 +950,7 @@ li {
 
 .blogHeader {
   background-image: url(../planted-final-assets/blog-header-1.jpg);
-  min-height: 400px;
+  min-height: 430px;
 }
 .blogHeader .wrapper {
   height: 100%;
@@ -1074,10 +1078,11 @@ aside li:before {
   font-style: italic;
   color: #074115;
   font-weight: 400;
-  font-size: clamp(0.8rem, 2vw, 1rem);
+  font-size: clamp(0.7rem, 2vw, 1rem);
 }
 .articleBlog p.date span {
   font-weight: 700;
+  display: inline;
 }
 .articleBlog p {
   padding-bottom: 20px;
@@ -1235,6 +1240,10 @@ footer {
   }
 }
 @media (max-width: 997px) {
+  .headerHome {
+    height: 100vh;
+    min-height: 900px;
+  }
   .headerHome .wrapper img {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -1730,7 +1739,7 @@ footer {
 }
 @media (max-width: 850px) {
   .navBlog {
-    height: 63px;
+    height: 50px;
   }
   .navBlog .wrapper {
     width: 100%;
@@ -1799,7 +1808,7 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    text-align: center;
+    text-align: left;
   }
   .blogArticle .imgBlog {
     width: 65%;
@@ -1816,6 +1825,12 @@ footer {
     width: 100%;
     margin: 0;
     padding: 25px 15px;
+  }
+  .blogArticle .date {
+    text-align: center;
+  }
+  .blogArticle h2 {
+    text-align: center;
   }
   .blogArticle .comments img {
     width: clamp(4rem, 2vw, 0.8rem);
@@ -1900,12 +1915,12 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 20px;
-    width: 85px;
+    gap: 15px;
+    width: 75px;
     visibility: visible;
     position: relative;
-    left: 20px;
-    top: -42px;
+    left: 21px;
+    top: -40px;
   }
   header.contact .wrapper {
     width: 100%;

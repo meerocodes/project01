@@ -9,6 +9,9 @@
 
 @media (max-width:1200px) {
 
+    // .headerHome img{
+    //     width: ;
+    // }
     .whatIsPlanted{
         h2{
             font-size: 2.5rem;
@@ -41,7 +44,10 @@
 
 @media (max-width:997px){
 
-
+    .headerHome{
+        height: 100vh;
+        min-height: 900px;
+    }
     .headerHome .wrapper img
      {  justify-content: flex-start;
         width: 250px;
