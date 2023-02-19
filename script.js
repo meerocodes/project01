@@ -51,23 +51,37 @@ darkModeIcon.addEventListener('click', function(event){
     `;
     
 
+if (darkModeIcon.classList !== "fa-regular fa-sun"){
 
-        if (event.target.className === 'fa-regular fa-moon'){
+    document.head.appendChild(style);
+    
+    const iElement = event.target;
+    console.log(iElement);
+    iElement.classList.toggle('fa-moon');
+    iElement.classList.toggle('fa-sun');
+   
+    
+
+} else {
+    
+    document.head.removeChild(style);
+}
+        // if (event.target.tagName === 'I'){
         
-        const iElement = event.target;
-        console.log(iElement);
+        // const iElement = event.target;
+        // console.log(iElement);
 
-        document.head.appendChild(style);
+        // document.head.appendChild(style);
 
-        iElement.classList.toggle('fa-moon');
-        iElement.classList.toggle('fa-sun');
-        }
+        // iElement.classList.toggle('fa-moon');
+        // iElement.classList.toggle('fa-sun');
+        // }
        
-        else if (event.target.className === 'fa-regular fa-sun'){
+        // else if (darkModeIcon.target.classList === 'fa-regular fa-sun'){
             
-            document.head.removeChild(style);
+        //     document.head.removeChild(style);
 
-        }
+        // }
         
 
     
