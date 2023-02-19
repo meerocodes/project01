@@ -255,8 +255,19 @@ h1, h2, h3, h4, p, a {
   text-decoration: none;
 }
 
-.i {
-  visibility: visible;
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
 }
 
 .headerHome {
@@ -1290,21 +1301,45 @@ footer {
   }
 }
 @media (max-width: 757px) {
+  .hamburger {
+    display: block;
+    margin-top: 10px;
+    margin-left: 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(45deg);
+            transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+            transform: translateY(-8px) rotate(-45deg);
+  }
   ul .fa-moon {
     visibility: visible;
   }
-  .mobileIcons {
-    z-index: 50;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 75px;
-    position: relative;
-    bottom: -10px;
-    left: 20px;
-    height: 0px;
-    z-index: 40;
-    visibility: visible;
+  .headerHome ul {
+    position: fixed;
+    left: -100%;
+    top: 50px;
+    gap: 5px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: transparent;
+    width: 100%;
+    text-align: center;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .headerHome ul.active {
+    left: 0;
   }
   .headerHome img {
     visibility: hidden;
@@ -1312,12 +1347,10 @@ footer {
   .headerHome .navHome {
     width: 100%;
     height: 50px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .headerHome li {
-    display: none;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: sticky;
   }
   .headerHome img {
     display: none;
@@ -1491,198 +1524,203 @@ footer {
   .headerHome li {
     display: none;
   }
-  .headerHome li .headerText h1 {
+  .headerHome ul {
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .headerHome .headerText h1 {
     font-size: 3.5rem;
   }
-  .headerHome li .wrapper .headerTextYellow {
+  .headerHome .wrapper .headerTextYellow {
     margin-left: 53px;
   }
-  main .whatIsPlanted {
-    padding: 10px 10px;
-  }
-  main .whatIsPlanted .wrapper {
-    width: 98%;
-  }
-  main .whatIsPlanted .wrapper h2 {
-    font-size: 2rem;
-    text-align: center;
-  }
-  main .homeBlog {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 0px;
-    padding: 50px 0;
-  }
-  main .homeBlog img {
-    width: 300px;
-  }
-  main .homeBlog .leftSide {
-    width: 98%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 5px 5px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    font-size: 2rem;
-  }
-  main .homeBlog .leftSide h2 {
-    padding: 0;
-    margin-top: 20px;
-    text-align: center;
-  }
-  main .homeBlog .leftSide p {
-    font-size: 1rem;
-    padding: 0;
-    text-align: center;
-  }
-  main .homeBlog .leftSide a {
-    -ms-flex-item-align: center;
-        align-self: center;
-    font-size: 1rem;
-  }
-  main .homeBlog .rightSide {
-    width: 98%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding: 5px 5px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-top: 20px;
-    font-size: 2rem;
-  }
-  main .homeBlog .rightSide img {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-  }
-  main .homeBlog .rightSide h2 {
-    padding: 0;
-    text-align: center;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-  }
-  main .homeBlog .rightSide p {
-    font-size: 1rem;
-    padding: 0;
-    text-align: center;
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
-  }
-  main .homeBlog .rightSide a {
-    -ms-flex-item-align: center;
-        align-self: center;
-    font-size: 1rem;
-    -webkit-box-ordinal-group: 5;
-        -ms-flex-order: 4;
-            order: 4;
-  }
-  main .about {
-    padding: 50px 10px;
-  }
-  main .about .wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  main .about .wrapper .greenHousesBox, main .about .wrapper .communityBox, main .about .wrapper .blogBox, main .about .wrapper .getInTouchBox {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  main .about .wrapper .greenHousesBox .title, main .about .wrapper .communityBox .title, main .about .wrapper .blogBox .title, main .about .wrapper .getInTouchBox .title {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 5px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-top: 20px;
-  }
-  main .imgBreak {
-    visibility: hidden;
-    height: 0px;
-  }
-  main .plantedFounder {
-    padding: 50px 0px;
-  }
-  main .plantedFounder .wrapper {
-    gap: 0px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  main .plantedFounder .wrapper article {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 20px 0;
-  }
-  main .plantedFounder img {
-    width: 200px;
-  }
-  main .gallery {
-    padding: 0;
-  }
-  main .gallery ul {
-    padding: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 0px;
-  }
 }
+main .whatIsPlanted {
+  padding: 10px 10px;
+}
+main .whatIsPlanted .wrapper {
+  width: 98%;
+}
+main .whatIsPlanted .wrapper h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+main .homeBlog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0px;
+  padding: 50px 0;
+}
+main .homeBlog img {
+  width: 300px;
+}
+main .homeBlog .leftSide {
+  width: 98%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 5px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 2rem;
+}
+main .homeBlog .leftSide h2 {
+  padding: 0;
+  margin-top: 20px;
+  text-align: center;
+}
+main .homeBlog .leftSide p {
+  font-size: 1rem;
+  padding: 0;
+  text-align: center;
+}
+main .homeBlog .leftSide a {
+  -ms-flex-item-align: center;
+      align-self: center;
+  font-size: 1rem;
+}
+main .homeBlog .rightSide {
+  width: 98%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px 5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 20px;
+  font-size: 2rem;
+}
+main .homeBlog .rightSide img {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+main .homeBlog .rightSide h2 {
+  padding: 0;
+  text-align: center;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+main .homeBlog .rightSide p {
+  font-size: 1rem;
+  padding: 0;
+  text-align: center;
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+main .homeBlog .rightSide a {
+  -ms-flex-item-align: center;
+      align-self: center;
+  font-size: 1rem;
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
+}
+main .about {
+  padding: 50px 10px;
+}
+main .about .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+main .about .wrapper .greenHousesBox, main .about .wrapper .communityBox, main .about .wrapper .blogBox, main .about .wrapper .getInTouchBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .about .wrapper .greenHousesBox .title, main .about .wrapper .communityBox .title, main .about .wrapper .blogBox .title, main .about .wrapper .getInTouchBox .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+main .imgBreak {
+  visibility: hidden;
+  height: 0px;
+}
+main .plantedFounder {
+  padding: 50px 0px;
+}
+main .plantedFounder .wrapper {
+  gap: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+main .plantedFounder .wrapper article {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+}
+main .plantedFounder img {
+  width: 200px;
+}
+main .gallery {
+  padding: 0;
+}
+main .gallery ul {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0px;
+}
+
 @media (max-width: 390px) {
   .headerHome .wrapper .headerTextYellow {
     margin-left: 3px;
@@ -1755,11 +1793,50 @@ footer {
   .navBlog {
     height: 50px;
   }
-  .navBlog .wrapper {
+  .navBlog .hamburger {
+    display: block;
+    margin-bottom: 8px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navBlog .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .navBlog .hamburger.active .bar:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(45deg);
+            transform: translateY(8px) rotate(45deg);
+  }
+  .navBlog .hamburger.active .bar:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+            transform: translateY(-8px) rotate(-45deg);
+  }
+  .navBlog ul {
+    position: fixed;
+    left: -100%;
+    top: 50px;
+    gap: 5px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: black;
     width: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    text-align: center;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    margin-top: 0;
+    padding-bottom: 8px;
+    z-index: 60;
+  }
+  .navBlog ul.active {
+    left: 0;
+  }
+  .navBlog .wrapper {
+    width: 80%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1777,21 +1854,6 @@ footer {
   }
   .navBlog h2 {
     text-align: center;
-  }
-  .navBlog li {
-    display: none;
-    width: 0;
-    padding: 0;
-  }
-  .blogHeader .wrapper .mobileIcons {
-    width: 75px;
-    visibility: visible;
-    position: relative;
-    top: -40px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 15px;
   }
   .blogHeader .blogTitle {
     width: 100%;
@@ -1920,24 +1982,50 @@ footer {
   .navContact {
     background-color: black;
   }
+  .navContact .hamburger {
+    display: block;
+    margin-bottom: 8px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navContact .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .navContact .hamburger.active .bar:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(45deg);
+            transform: translateY(8px) rotate(45deg);
+  }
+  .navContact .hamburger.active .bar:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+            transform: translateY(-8px) rotate(-45deg);
+  }
+  .navContact ul {
+    position: fixed;
+    left: -100%;
+    top: 50px;
+    gap: 5px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    margin-top: 0;
+    padding-bottom: 8px;
+  }
+  .navContact ul.active {
+    left: 0;
+    z-index: 40;
+  }
   .navContact .wrapper {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .navContact .wrapper li {
-    display: none;
-  }
-  .contact .mobileIcons {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 15px;
-    width: 75px;
-    visibility: visible;
-    position: relative;
-    left: 21px;
-    top: -40px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 80%;
   }
   header.contact .wrapper {
     width: 100%;

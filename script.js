@@ -121,3 +121,21 @@ if (darkModeIcon.classList !== "fa-regular fa-sun"){
     // iElement.classList.toggle('fa-regular-far-sun');
     // iElement.classList.toggle('fa-regular-far-moon');
     // }
+
+
+    // HAMBURGER MENU--------------------------------
+
+    const hamburger = document.querySelector('.hamburger')
+    const navMenu = document.querySelector('ul')
+    
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+
+    })
+
+   document.querySelectorAll('a.navLinks').forEach(n => n.addEventListener('click', ()=> {
+        hamburger.classList.remove("active")
+        navMenu.classList.remove("active")
+
+    }))
