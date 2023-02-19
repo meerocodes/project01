@@ -50,15 +50,30 @@ darkModeIcon.addEventListener('click', function(event){
       }
     `;
     
-    // if darkModeIcon ===(true){
-    // function myFunction(darkModeIcon) {
-    //     darkModeIcon.classList.toggle("fa-regular fa-sun")
-    //   };
-    // }
 
-     
 
-    document.head.appendChild(style);
+        if (event.target.className === 'fa-regular fa-moon'){
+        
+        const iElement = event.target;
+        console.log(iElement);
+
+        document.head.appendChild(style);
+
+        iElement.classList.toggle('fa-moon');
+        iElement.classList.toggle('fa-sun');
+        }
+       
+        else if (event.target.className === 'fa-regular fa-sun'){
+            
+            document.head.removeChild(style);
+
+        }
+        
+
+    
+    })
+
+   
 
    
 
@@ -73,16 +88,9 @@ darkModeIcon.addEventListener('click', function(event){
 
     
 
-    if (event.target.tagName === 'I'){
-        const iElement = event.target;
-        console.log(iElement)
-    
-        
-    iElement.classList.toggle('fa-regular-far-sun');
-    iElement.classList.toggle('fa-regular-far-moon');
-    }
+
   
-})
+
 
 
 
@@ -91,3 +99,11 @@ darkModeIcon.addEventListener('click', function(event){
 // Create a moon and sun toggle
 //   darkMode.classList.toggle('fa-regular far-moon');
 //   darkMode.classList.toggle('fa-regular far-sun');
+
+// darkModeIcon.addEventListener('click', function(event){
+
+
+  
+    // iElement.classList.toggle('fa-regular-far-sun');
+    // iElement.classList.toggle('fa-regular-far-moon');
+    // }
