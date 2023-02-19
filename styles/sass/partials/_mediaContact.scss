@@ -7,13 +7,17 @@
 @use "./nav" as *;
 
 @media (max-width: 850px) {
+
+    ul .fa-moon{
+        visibility: visible;
+    }
     .navContact {
         background-color: black;
         .wrapper {
             justify-content:center ;
 
 
-            ul {
+            li {
                 display: none;
             }
         }

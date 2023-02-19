@@ -82,6 +82,9 @@
 
 }
 @media (max-width:757px){
+    ul .fa-moon{
+        visibility: visible;
+    }
 
     .mobileIcons{
         z-index: 50;
@@ -106,7 +109,7 @@
            
         }
         
-        ul {
+        li {
            display: none;
         }
      
@@ -264,8 +267,12 @@
             display: none;
         }
         
-        ul {
+        li {
             display: none;
+        }
+        ul{
+            align-content: center;
+        }
            
      
     

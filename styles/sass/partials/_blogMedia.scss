@@ -27,7 +27,9 @@
 
 @media (max-width:850px) {
 
-
+    ul .fa-moon{
+        visibility: visible;
+    }
     .navBlog{
         height: 50px;
         .wrapper  {
@@ -53,7 +55,7 @@
         h2 {
             text-align: center;
         }
-        ul {
+        li {
             display: none;
             width: 0;
             padding: 0;

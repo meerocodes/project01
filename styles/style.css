@@ -255,6 +255,10 @@ h1, h2, h3, h4, p, a {
   text-decoration: none;
 }
 
+.i {
+  visibility: visible;
+}
+
 .headerHome {
   background-image: url(../planted-final-assets/home-image-1.jpg);
   background-size: cover;
@@ -892,6 +896,10 @@ footer {
   padding: 10px;
 }
 
+.fa-regular {
+  visibility: visible;
+}
+
 .navBlog {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1282,6 +1290,9 @@ footer {
   }
 }
 @media (max-width: 757px) {
+  ul .fa-moon {
+    visibility: visible;
+  }
   .mobileIcons {
     z-index: 50;
     display: -webkit-box;
@@ -1305,7 +1316,7 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .headerHome ul {
+  .headerHome li {
     display: none;
   }
   .headerHome img {
@@ -1477,13 +1488,13 @@ footer {
   .headerHome img {
     display: none;
   }
-  .headerHome ul {
+  .headerHome li {
     display: none;
   }
-  .headerHome ul .headerText h1 {
+  .headerHome li .headerText h1 {
     font-size: 3.5rem;
   }
-  .headerHome ul .wrapper .headerTextYellow {
+  .headerHome li .wrapper .headerTextYellow {
     margin-left: 53px;
   }
   main .whatIsPlanted {
@@ -1738,6 +1749,9 @@ footer {
   }
 }
 @media (max-width: 850px) {
+  ul .fa-moon {
+    visibility: visible;
+  }
   .navBlog {
     height: 50px;
   }
@@ -1764,7 +1778,7 @@ footer {
   .navBlog h2 {
     text-align: center;
   }
-  .navBlog ul {
+  .navBlog li {
     display: none;
     width: 0;
     padding: 0;
@@ -1900,6 +1914,9 @@ footer {
   }
 }
 @media (max-width: 850px) {
+  ul .fa-moon {
+    visibility: visible;
+  }
   .navContact {
     background-color: black;
   }
@@ -1908,7 +1925,7 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .navContact .wrapper ul {
+  .navContact .wrapper li {
     display: none;
   }
   .contact .mobileIcons {

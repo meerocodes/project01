@@ -5,6 +5,8 @@
 @use "./typography";
 
 
+
+
 // HEADER STYLES
 .headerHome {
     background-image: url(../planted-final-assets/home-image-1.jpg);
@@ -217,7 +219,7 @@
             margin-top: 100px;
 
         }
-        h2, p, {
+        h2, p {
             padding-left: 200px;
             text-align: right;
             gap: 25px;
