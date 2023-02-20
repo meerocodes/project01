@@ -1345,11 +1345,7 @@ footer {
   }
   .headerHome ul.active {
     left: 0;
-<<<<<<< HEAD
-    position: abs;
-=======
     position: absolute;
->>>>>>> hamburgerMenu
   }
   .headerHome img {
     visibility: hidden;
