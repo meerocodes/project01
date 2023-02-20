@@ -6,6 +6,11 @@
 @use "./nav" as *;
 @use "./contact" as *;
 
+
+// darkModeButton{
+    .fa-regular{
+        visibility: visible;
+    }
 // NAV------
 .navBlog {
     display: flex;

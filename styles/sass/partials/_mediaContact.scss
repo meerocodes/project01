@@ -7,29 +7,65 @@
 @use "./nav" as *;
 
 @media (max-width: 850px) {
+
+    ul .fa-moon{
+        visibility: visible;
+    }
     .navContact {
         background-color: black;
+        .hamburger {
+            display: block;
+            margin-bottom: 8px;
+            align-items: center;
+        }
+        .hamburger.active .bar:nth-child(2){
+            opacity: 0;
+        }
+        .hamburger.active .bar:nth-child(1){
+            transform: translateY(8px) rotate(45deg);
+        }
+        .hamburger.active .bar:nth-child(3){
+            transform: translateY(-8px) rotate(-45deg);
+        }
+    
+        ul{ position: fixed;
+            left: -100%;
+            top:50px;
+            gap:5px;
+            flex-direction: column;
+            background-color: black;
+            width: 100%;
+            text-align: center;
+            transition: 0.3s;
+            margin-top:0;
+            padding-bottom:8px
+
+        }
+        ul.active{
+            left:0;
+            z-index: 40;
+            position: absolute;
+        }
         .wrapper {
-            justify-content:center ;
+            justify-content:space-between ;
+            width: 80%;
 
 
-            ul {
-                display: none;
-            }
+          
         }
     }
 
-    .contact {
-        .mobileIcons {
-            display: flex;
-            gap: 15px;
-            width: 75px;
-            visibility: visible;
-            position: relative;
-            left: 21px;
-            top: -40px;
-        }
-    }
+    // .contact {
+    //     .mobileIcons {
+    //         display: flex;
+    //         gap: 15px;
+    //         width: 75px;
+    //         visibility: visible;
+    //         position: relative;
+    //         left: 21px;
+    //         top: -40px;
+    //     }
+    // }
  
         
 

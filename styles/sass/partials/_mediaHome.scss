@@ -82,33 +82,77 @@
 
 }
 @media (max-width:757px){
+    .hamburger {
+        display: block;
+        margin-top:10px;
+        margin-left: 20px;
+        align-items: center;
 
-    .mobileIcons{
-        z-index: 50;
-        display: flex;
-        width: 75px;
-        position: relative;
-        bottom: -10px;
-        left: 20px;
-        height: 0px;
-        z-index: 40;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    
+
+
+
+    ul .fa-moon{
         visibility: visible;
     }
 
+    // .mobileIcons{
+    //     z-index: 50;
+    //     display: flex;
+    //     width: 75px;
+    //     position: relative;
+    //     bottom: -10px;
+    //     left: 20px;
+    //     height: 0px;
+    //     z-index: 40;
+    //     visibility: visible;
+    // }
+
+
     .headerHome {
+        ul{ position: fixed;
+            left: -100%;
+            top:50px;
+            gap:5px;
+            flex-direction: column;
+            background-color: transparent;
+            width: 100%;
+            text-align: center;
+            transition: 0.3s;
+            margin-top: 0;
+
+
+
+        }
+        ul.active{
+            left:0;
+            position: absolute;
+
+        }
         img {
             visibility: hidden;
         }
         .navHome{
             width: 100%;
             height: 50px;
-            justify-content: center;
+            justify-content: space-between;
            
         }
         
-        ul {
-           display: none;
-        }
+        // li {
+        //    display: none;
+        // }
      
     }
     .headerHome{
@@ -241,21 +285,41 @@
 @media (max-width:500px) {
 
 
-.wrapper {
-    width: 98% ;
-    max-width: 500px ;
-    margin: 0 auto;
+// .wrapper {
+//     width: 98% ;
+//     max-width: 500px ;
+//     margin: 0 auto;
     
-    .navHome{
-        width: 100%;
-        height: 50px;
-        justify-content: center;
+//     .navHome{
+//         width: 100%;
+//         height: 50px;
+//         justify-content: space-between;
+
+//         ul{ position: fixed;
+//             left: -100%;
+//             top:50px;
+//             gap:5px;
+//             flex-direction: column;
+//             background-color: transparent;
+//             width: 100%;
+//             text-align: center;
+//             transition: 0.3s;
+//             margin-top: 0;
+
+
+
+//         }
+//         ul.active{
+//             left:0;
+//             position: abs;
+
+//         }
        
-    }
+//     }
   
   
 
-}
+
 
 
     .headerHome {
@@ -264,9 +328,7 @@
             display: none;
         }
         
-        ul {
-            display: none;
-           
+ 
      
     
         .headerText {
@@ -280,8 +342,7 @@
             }
         }
     }
-    }
-
+ 
 main {
     .whatIsPlanted{
   
@@ -434,7 +495,9 @@ main {
         gap:0px;
     }
 }
+
 }
+
 }
 
 @media (max-width:390px) {
