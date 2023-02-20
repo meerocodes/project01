@@ -57,13 +57,13 @@ if (darkModeIcon.classList !== "fa-regular fa-sun"){
     
     const iElement = event.target;
     console.log(iElement);
+
     iElement.classList.toggle('fa-moon');
     iElement.classList.toggle('fa-sun');
    
     
-
-} else {
     
+} else if (darkModeIcon.classList[1] === "fa-sun") {
     document.head.removeChild(style);
 }
         // if (event.target.tagName === 'I'){
@@ -83,29 +83,10 @@ if (darkModeIcon.classList !== "fa-regular fa-sun"){
 
         // }
         
-
-    
-    })
-
-   
-
-   
-
-   
-
-
-
-    
-    
+})
+        
     // const darkMode = darkModeIcon.classList
     // console.log(darkMode)
-
-    
-
-
-  
-
-
 
 
 
