@@ -87,6 +87,7 @@
         margin-top:10px;
         margin-left: 20px;
         align-items: center;
+
     }
     .hamburger.active .bar:nth-child(2){
         opacity: 0;
@@ -131,9 +132,13 @@
             transition: 0.3s;
             margin-top: 0;
 
+
+
         }
         ul.active{
             left:0;
+            position: abs;
+
         }
         img {
             visibility: hidden;
@@ -323,8 +328,7 @@
             }
         }
     }
-    }
-
+ 
 main {
     .whatIsPlanted{
   
@@ -479,6 +483,8 @@ main {
 }
 
 }
+}
+
 
 @media (max-width:390px) {
         .headerHome {
