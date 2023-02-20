@@ -1337,6 +1337,7 @@ footer {
     text-align: center;
     -webkit-transition: 0.3s;
     transition: 0.3s;
+    margin-top: 0;
   }
   .headerHome ul.active {
     left: 0;
@@ -1350,7 +1351,6 @@ footer {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    position: sticky;
   }
   .headerHome img {
     display: none;
