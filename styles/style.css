@@ -621,21 +621,72 @@ h1, h2, h3, h4, p, a {
 }
 
 .gallery {
-  padding: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.gallery ul {
+
+.iSlider {
+  position: relative;
+  width: 380px;
+  height: 500px;
+  margin: 10px;
+  gap: 20px;
+}
+.iSlider .slideNav {
+  z-index: 2;
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 20px;
+  bottom: 30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
-.gallery li {
+.iSlider .slideNav .buttn {
+  background: #f5f5dc;
+  width: 12px;
+  height: 12px;
+  margin: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.iSlider .slideNav .buttn.active {
+  background: #6E6E6E;
+  -webkit-box-shadow: 0 0 1px grey;
+          box-shadow: 0 0 1px grey;
+}
+.iSlider .slide.active {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transition-property: -webkit-clip-path;
+  transition-property: -webkit-clip-path;
+  transition-property: clip-path;
+  transition-property: clip-path, -webkit-clip-path;
+}
+.iSlider .slide {
+  z-index: 10;
+  position: absolute;
+  width: 100%;
+  -webkit-clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+          clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+}
+.iSlider .slide img {
+  position: 1;
+  width: 100%;
+  border-radius: 5px;
+}
+
+li {
   text-decoration: none;
   list-style: none;
 }

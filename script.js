@@ -120,3 +120,40 @@ if (darkModeIcon.classList !== "fa-regular fa-sun"){
         navMenu.classList.remove("active")
 
     }))
+
+
+
+
+
+
+// IMAGE CAROUSEL----------------------------------
+
+// Created an Image Carousel with the aid of this youtube video https://www.youtube.com/watch?v=bW8X-tt5AZQ. Taught me about clip-path css property and further helped me understand how to use 'active' as a css property to my advantage.
+
+const slide = document.querySelectorAll('.slide');
+const buttons = document.querySelectorAll('.buttn');
+let currentSlide = 1;
+
+const imgNav = function(manual){
+    console.log(imgNav)
+
+    slide.forEach(function(slides){
+        slides.classList.remove('active');
+
+        buttons.forEach(function(clickedButn){
+            clickedButn.classList.remove('active')
+        });
+    });
+    slide[manual].classList.add('active');
+    buttons[manual].classList.add('active');
+}
+buttons.forEach((buttn, i) => {
+    buttn.addEventListener('click', () => {
+        imgNav(i);
+        currentSlide = i;
+    })
+})
+
+// Need to add my JavaScript to either add side buttons OR autoPlay images 
+
+

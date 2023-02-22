@@ -372,21 +372,66 @@
 // Gallery
 
 .gallery{
-    
-    padding:50px;
     display: flex;
     justify-content: center;
-    
-    ul {
+    align-items: center;
+}
+
+.iSlider{
+    position: relative;
+    width: 380px;
+    height:500px ;
+    margin: 10px;
+    gap: 20px;
+
+    .slideNav{
+        z-index: 2;
+        position: absolute;
         display: flex;
-        gap: 20px
+        bottom:30px;
+        left:50%;
+        transform: translateX(-50%);
+        .buttn{
+            background: #f5f5dc;
+            width: 12px;
+            height: 12px;
+            margin: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .buttn.active{
+            background: #6E6E6E;
+            box-shadow: 0 0 1px grey;
+        }
     }
+    .slide.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        transition: .5s;
+        transition-property: clip-path;
+
+    }
+    .slide{
+        z-index: 10;
+        position: absolute;
+        width: 100%;
+        clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+
+        img{
+            position: 1;
+            width: 100%;
+            border-radius: 5px;
+       
+        }
+    }
+}
+    
+    
     li {
         text-decoration: none;
         list-style: none;
     }
 
-}
+
 
 
 // Footer
