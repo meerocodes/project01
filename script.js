@@ -3,6 +3,10 @@ const darkModeIcon = document.querySelector('i');
 
 // Run click event -> turn into variable
 
+
+
+
+
 darkModeIcon.addEventListener('click', function(event){
 
 // const toggle = target.classList
@@ -34,10 +38,12 @@ darkModeIcon.addEventListener('click', function(event){
         color: white;
       }
       .blogMain aside .asideContent {
-        background-color: black;
+        background-color: #1a1919;
         color: white;
       }
-
+      aside {
+        background-color:#1a1919;
+      }
       .contactPage{
       background-color: black;
       color: white;
@@ -48,42 +54,32 @@ darkModeIcon.addEventListener('click', function(event){
       .contactInfo ul li{
         color: white;
       }
+    
     `;
     
 
-if (darkModeIcon.classList !== "fa-regular fa-sun"){
+if (style){
 
     document.head.appendChild(style);
     
     const iElement = event.target;
-    console.log(iElement);
 
-    iElement.classList.toggle('fa-moon');
     iElement.classList.toggle('fa-sun');
+    iElement.classList.toggle('fa-moon');
+
+    
    
-    
-    
-} else if (darkModeIcon.classList[1] === "fa-sun") {
-    document.head.removeChild(style);
-}
-        // if (event.target.tagName === 'I'){
-        
-        // const iElement = event.target;
-        // console.log(iElement);
+}else if(darkModeIcon === 'fa moon') { 
+    style.remove();
 
-        // document.head.appendChild(style);
 
-        // iElement.classList.toggle('fa-moon');
-        // iElement.classList.toggle('fa-sun');
-        // }
-       
-        // else if (darkModeIcon.target.classList === 'fa-regular fa-sun'){
-            
-        //     document.head.removeChild(style);
-
-        // }
-        
+    }
 })
+    
+//  
+// })
+        
+
         
     // const darkMode = darkModeIcon.classList
     // console.log(darkMode)
@@ -95,13 +91,9 @@ if (darkModeIcon.classList !== "fa-regular fa-sun"){
 //   darkMode.classList.toggle('fa-regular far-moon');
 //   darkMode.classList.toggle('fa-regular far-sun');
 
-// darkModeIcon.addEventListener('click', function(event){
 
 
   
-    // iElement.classList.toggle('fa-regular-far-sun');
-    // iElement.classList.toggle('fa-regular-far-moon');
-    // }
 
 
     // HAMBURGER MENU--------------------------------
